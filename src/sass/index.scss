@@ -1,5 +1,4 @@
-@import './common';
-@import './example';
+@import './modern-normolize.scss';
 @import './Header.scss';
 @import './Hero.scss';
 @import './Products.scss';
@@ -9,3 +8,7 @@
 @import './Customer_Reviews.scss';
 @import './Contacts.scss';
 @import './Footer.scss';
+
+@import './utils/variables';
+
+@import './base/common';
