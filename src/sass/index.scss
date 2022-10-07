@@ -1,17 +1,21 @@
-@import './modern-normolize.scss';
-@import './Header.scss';
-@import './Hero.scss';
-@import './Products.scss';
-@import './About.scss';
-@import './Advantages.scss';
-@import './Gallery.scss';
-@import './Customer_Reviews.scss';
-@import './Contacts.scss';
-@import './Footer.scss';
-
+@import './utils/modern-normolize';
 @import './utils/variables';
 
 @import './base/common';
-@import './base/btn';
 @import './base/mixins-font';
 @import './base/mixins-positions';
+@import './base/container';
+
+@import './component/btn';
+
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/products';
+@import './layout/about';
+@import './layout/advantages';
+@import './layout/gallery';
+@import './layout/customer_reviews';
+@import './layout/contacts';
+@import './layout/footer';
+
