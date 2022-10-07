@@ -1,0 +1,13 @@
+.btn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  @include font-btn();
+  height: 42px;
+  background-color: var(--color-btn-default);
+  border-radius: 10px;
+  border: none;
+}
+
+// Все остальние стили которые отличаются можна задавать через отдельный удобный вам класс (например button-menu)
