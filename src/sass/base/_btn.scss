@@ -3,7 +3,6 @@
   align-items: center;
   text-align: center;
   justify-content: center;
-  @include font-btn();
   height: 42px;
   background-color: var(--color-btn-default);
   border-radius: 10px;
