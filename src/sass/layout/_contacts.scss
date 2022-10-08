@@ -1,0 +1,125 @@
+.contacts__block{
+    background: var(--color-primary-text);
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    padding: 40px 32px;
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    &:last-child {
+        margin-bottom: 32px;
+    }
+}
+
+.contacts__category{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding: 0 25px;
+    background: var(--color-btn-default);
+    border-radius: 4px;
+    @include font-mobile(12px, 500, 22px);
+    color: var(--color-secondary-text);
+}
+
+.contacts__city{
+    color: var(--color-secondary-text);
+    @include font-mobile(12px, 500, 22px);
+    margin-bottom: 8px;
+}
+
+.contacts__adress{
+    display: block;
+    @include font-mobile(12px, 500, 22px);
+    color: var(--color-text-orange);
+    margin-bottom: 24px;
+
+    &:hover{
+        text-decoration-line: underline;
+        color: var(--color-text-orange);
+    }
+
+    &:focus {
+        text-decoration-line: underline;
+        color: var(--color-text-orange);
+        outline: solid 2px var(--color-text-orange);
+    }
+}
+
+.contacts__schedule{
+    padding: 24px 0;
+    border-top: 1px solid #E1E1E1;
+    border-bottom: 1px solid #E1E1E1;
+    margin-bottom: 24px ;
+}
+
+.contacts__working-period:first-child{
+    margin-bottom: 8px;
+}
+
+.contacts__working-days{
+    @include font-mobile(12px, 500, 22px);
+    color: var(--color-secondary-text);
+}
+
+.contacts__working-hours{
+    @include font-mobile(12px, 500, 22px);
+    color: var(--color-btn-disable);
+}
+
+
+.contacts__tel{
+    @include font-mobile(12px, 500, 18px);
+    color: var(--color-secondary-text);
+
+    &:hover {
+        color: var(--color-text-orange);
+    }
+
+    &:focus {
+        color: var(--color-text-orange);
+        outline: solid 2px var(--color-text-orange);
+    }
+}
+
+.contacts__mail{
+    @include font-mobile(12px, 500, 18px);
+    color: var(--color-secondary-text);
+
+    &:hover {
+        color: var(--color-text-orange);
+    }
+
+    &:focus {
+        color: var(--color-text-orange);
+        outline: solid 2px var(--color-text-orange);
+    }
+}
+
+
+.btn-icon {
+    width: 12px;
+    height: 12px;
+}
+
+.contacts__btn-franchise {
+    background-color: transparent;
+    border: 2px solid var(--color-btn-default);
+    width: 196px;
+    gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    @include font-btn();
+}
+
+.contacts__btn-location {
+    width: 196px;
+    gap: 10px;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    @include font-btn();
+}
