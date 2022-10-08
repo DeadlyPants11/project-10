@@ -21,19 +21,19 @@
     padding: 0 25px;
     background: var(--color-btn-default);
     border-radius: 4px;
-    @include font-mobile(12px, 500, 22px);
+    // @include font-mobile(12px, 500, 22px);
     color: var(--color-secondary-text);
 }
 
 .contacts__city{
     color: var(--color-secondary-text);
-    @include font-mobile(12px, 500, 22px);
+    // @include font-mobile(12px, 500, 22px);
     margin-bottom: 8px;
 }
 
 .contacts__adress{
     display: block;
-    @include font-mobile(12px, 500, 22px);
+    // @include font-mobile(12px, 500, 22px);
     color: var(--color-text-orange);
     margin-bottom: 24px;
 
@@ -61,18 +61,18 @@
 }
 
 .contacts__working-days{
-    @include font-mobile(12px, 500, 22px);
+    // @include font-mobile(12px, 500, 22px);
     color: var(--color-secondary-text);
 }
 
 .contacts__working-hours{
-    @include font-mobile(12px, 500, 22px);
+    // @include font-mobile(12px, 500, 22px);
     color: var(--color-btn-disable);
 }
 
 
 .contacts__tel{
-    @include font-mobile(12px, 500, 18px);
+    // @include font-mobile(12px, 500, 18px);
     color: var(--color-secondary-text);
 
     &:hover {
@@ -86,7 +86,7 @@
 }
 
 .contacts__mail{
-    @include font-mobile(12px, 500, 18px);
+    // @include font-mobile(12px, 500, 18px);
     color: var(--color-secondary-text);
 
     &:hover {
@@ -112,7 +112,7 @@
     gap: 10px;
     margin-left: auto;
     margin-right: auto;
-    @include font-btn();
+    // @include font-btn();
 }
 
 .contacts__btn-location {
@@ -121,5 +121,5 @@
     margin-bottom: 16px;
     margin-left: auto;
     margin-right: auto;
-    @include font-btn();
+    // @include font-btn();
 }
