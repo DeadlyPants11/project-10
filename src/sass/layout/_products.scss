@@ -1,6 +1,19 @@
+.products-owerlay {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #F5F5F5;
+    background-image: url(/src/images/mobile-png/background-customer-m-1x.png);
+
+@media screen and (min-width: 768px) {
+    background-image: url(/src/images/tablet-png/background-customer-t-1x.png);
+}
+}
+
 .products-text {
     font-family: 'Montserrat';
-    font-style: normal;
+    padding-top: 60px;
+    padding-bottom: 12px;
     font-weight: 800;
     font-size: 18px;
     line-height: 22px;
@@ -18,6 +31,7 @@
     font-size: $fs;
     font-weight: $fw;
     line-height: calc($lh / $fs);
+    padding-top: 61px;
 }
 
 @mixin font-mobile($fs: 18px, $fw: 800, $lh: 22px) {
@@ -29,7 +43,7 @@
 
 .products-title {
     font-family: 'Seymour One';
-    font-style: normal;
+    padding-bottom: 148px;
     font-weight: 400;
     font-size: 30px;
     line-height: 38px;
@@ -50,6 +64,7 @@
     font-weight: $fw;
     line-height: calc($lh / $fs);
     letter-spacing: 0.04em;
+    padding-bottom: 200px;
 }
     
 @mixin font-mobile($fs: 30px, $fw: 400, $lh: 38px) {
@@ -63,15 +78,70 @@
     gap: 40px;
     display: flex;
     flex-direction: column;
+    text-align: center;
     width: 100%;
+@media screen and (min-width: 480px) {
+    flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: start;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+}
+
 @media screen and (min-width: 768px)  {
     flex-direction: row;
 }
 }
 
+.priducts-item {
+    width: 100%;
+    height: 420px;
+    left: 20px;
+    top: 782px;
+    background: #AEC6A5;
+    border-radius: 24px;
+    &:hover,
+    &:focus {
+        border-width: 3px;
+        border-style: solid;
+        border-color: #2196f3;
+        }
+@media screen and (min-width: 320px) {
+    width: 280px;
+}
+@media screen and (min-width: 768px) {
+    width: 224px;
+    height: 428px;
+    box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+    border-radius: 15.7808px; 
+}
+@media screen and (min-width: 1200px) {
+    width: 370.16px;
+        height: 535.51px;
+        left: 12.07px;
+        top: 1121.44px;
+}
+&:nth-last-child(2) {
+    background: #EFD478;
+    border-radius: 24px;
+}
+
+&:last-child {
+    background: #D6936D;
+    border-radius: 24px;
+}
+
+@media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 95px) /3);
+}
+}
+
 .products-name {
+    position: relative;
     font-family: 'Montserrat';
-    font-style: normal;
+    margin-top: 123px;
+    margin-bottom: 40px;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
@@ -79,33 +149,67 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #131313;
-@mixin font-desktop($fs: 30px, $fw: 700, $lh: 37px) {
-    font-size: $fs;
-    font-weight: $fw;
-    line-height: calc($lh / $fs);
+
+    @mixin font-desktop($fs: 30px, $fw: 700, $lh: 37px) {
+        font-size: $fs;
+        font-weight: $fw;
+        line-height: calc($lh / $fs);
+        letter-spacing: 0.04em;
+    }
+
+    @mixin font-tablet($fs: 22px, $fw: 700, $lh: 27px) {
+        font-size: $fs;
+        font-weight: $fw;
+        line-height: calc($lh / $fs);
+    }
+
+    @mixin font-mobile($fs: 20px, $fw: 700, $lh: 24px) {
+        font-size: $fs;
+        font-weight: $fw;
+        line-height: calc($lh / $fs);
+    }
+
+    &:last-child {
+        margin-top: 105.64px;
+        margin-bottom: 34.36;
+    }
+}
+
+.products-name::before {
+    content: url(/src/images/tablet-png/kelsey-curtis-t-1x.png);
+    position: absolute;
+    width: 200.33px;
+    height: 199.68px;
+    left: 0px;
+    top: 0px;
+    border-radius: 100.166px;
+    transform: translateY(-230);
+}
+
+.products-name::before {
+ 
+}
+
+.product-description {
+    position: relative;
+    font-family: 'Montserrat';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 176%;
+    text-align: center;
     letter-spacing: 0.04em;
-}
-@mixin font-tablet($fs: 22px, $fw: 700, $lh: 27px) {
-    font-size: $fs;
-    font-weight: $fw;
-    line-height: calc($lh / $fs);
-}
-@mixin font-mobile($fs: 20px, $fw: 700, $lh: 24px) {
-    font-size: $fs;
-    font-weight: $fw;
-    line-height: calc($lh / $fs);
-}
+    color: #131313;
 }
 
-.products-item {
-    width: 100%;
-    height: 420px;
-    left: 20px;
-    top: 782px;
-    background: #AEC6A5;
-    border-radius: 24px;
-
-@media screen and (max-width: 480px) {
-    width: 280px;
-}
+.btn-open {
+    box-sizing: border-box;
+    
+    width: 40px;
+    height: 0px;
+    left: 0px;
+    top: 0px;
+    border: 2px solid #131313;
 }
