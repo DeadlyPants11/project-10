@@ -1,8 +1,6 @@
 // <<<<<<<<<<--MOBILE-->>>>>>>>>>>>
 @media screen and (max-width: 767px) {
-    .container-hero {
-        width: 100%;
-        max-width: 480px;
+    .container-hero {        
         height: 502px;
         padding-top: 61px;
         padding-left: 20px;
@@ -35,26 +33,110 @@
         z-index: 20;
         left: 0px; 
     }
-    .container-hero__image-ice-cream {
-        width: 157px;
-        height: 207px;
-        position: absolute;        
-        bottom: 0px;
-        left: 82px;        
+    // .container-hero__image-ice-cream {
+    //     max-width: 157px;
+    //     height: 207px;
+    //     position: absolute;        
+    //     bottom: 0px;
+    //     left: 82px;        
        
-        z-index: 30;
+    //     z-index: 30;
 
-        border: 1px solid tomato;
-    }
+    //     border: 1px solid tomato;
+    // }
+
+
 
 
 }
 // <<<<<<<<<<--TABLET-->>>>>>>>>>>>
 @media screen and (min-width: 768px) {
-    .container-hero__title {
+    .container-hero {        
+        height: 349px;
+        padding-top: 38px;        
+        background-color: var(--color-background);
+        position: relative;
+    }
+
+    .container-hero__title {        
         font-size: 18px;
         line-height: 1.28;
+        margin-bottom: 20px;
     }
+    .container-hero__quantity-item {
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 1.21;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        margin-bottom: 4px;
+        text-align: right;
+    }
+    .container-hero__item-list {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        text-align: right;
+        color: var(--color-primary-text)
+    }
+    .container-hero__list {
+        margin-bottom: 20px;
+    }
+    .container-hero__item {
+        position: absolute;
+        right: 32px;
+        top: 28px;
+    }
+    .container-hero__description {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+
+        font-size: 12px;
+        line-height: 1.4;
+        max-width: 151px;
+        // min-height: 80px;
+        color: var(--color-primary-text);
+    
+        position: absolute;
+        left: 217px;
+        bottom: 52px;
+        z-index: 60;
+
+    }
+// <<<<<<<<<<--TABL IMAGES-->>>>>>>>>>>>
+    .container-hero__image-plate {
+        width: 152px;
+        position: absolute;
+        bottom: 13px;
+        left: 32px;
+        z-index: 20;        
+    }
+    .container-hero__image-point {        
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        z-index: 10; 
+    }
+    .container-hero__backlight {
+        width: 466px;
+        position: absolute;
+        bottom: 0px;
+        right: 80px;
+        z-index: 20;
+        background: rgba(252, 252, 252, 0.44);
+            filter: blur(27.9859px);        
+    }
+    .container-hero__image-ice-cream {
+        position: absolute;
+        bottom: 0px;
+        z-index: 30;
+    }
+    .container-hero__image-smile {
+        position: absolute;        
+        z-index: 40;
+    }
+
     
 }
 
@@ -67,10 +149,32 @@
     color: var(--color-primary-text);
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-    .container-hero__title-part {
-        font-size: 24px;
-        line-height: 0.54;
+    .container-hero__title {
+        width: 181px;            
     }
+    .container-hero__title-part {
+        font-size: 24px;        
+    }
+    .container-hero__item-list {
+        font-size: 8px;
+        line-height: 1.25;
+    }
+    .container-hero__image-point {
+        width: 767px;
+    }
+    .container-hero__backlight {
+        width: 266px;
+        height: 341px;
+    }
+    .container-hero__image-ice-cream {        
+        right: 93px;
+        bottom: 0px;        
+    }
+    .container-hero__image-smile {        
+        top: 31px;
+        right: 96px;        
+    }
+
 }
 @media screen and (max-width: 1199px) {
     .container-hero__btn-list {
@@ -112,11 +216,9 @@
 
 // <<<<<<<<<<--DESKTOP-->>>>>>>>>>>>
 @media screen and (min-width: 1200px) {
-    .container-hero {
-        max-width: 1600px;
+    .container-hero {        
         height: 591px;
-        padding-top: 45px;
-        padding-bottom: 111px;
+        padding-top: 45px;        
         background-color: var(--color-background);
         position: relative;
     }
@@ -138,56 +240,32 @@
         gap: 12px;
 }
 
-    
-
-    .container-hero__description {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 140%;
+    .container-hero__description {        
+        font-size: 14px;        
         max-width: 220px;
-        min-height: 80px;
-        color: var(--color-primary-text);
-    
+        
+            
         position: absolute;
         left: 256px;
         bottom: 111px;
-        z-index: 60;
-
+        
     }
 
-    .container-hero__quantity-item {
-        font-weight: 900;
+    .container-hero__quantity-item {        
         font-size: 46px;
         line-height: 1.22;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-
-        margin-bottom: 4px;
-        text-align: right;
-
     }
-
-    .container-hero__item-list {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
+    .container-hero__item-list {        
         font-size: 14px;
         line-height: 1.21;
-        color: #FCFCFC;
-
-        text-align: right;
     }
 
     .container-hero__item {
         position: absolute;
         right: 16px;
-        top: 53px;
-        
+        top: 53px;       
 
     }
-
     .container-hero__list {
         margin-bottom: 16px;
 
@@ -198,23 +276,30 @@
         
 
     }
-
+// <<<<<<<<<<--DESK IMAGES-->>>>>>>>>>>>
     .container-hero__image-plate {
         width: 225px;
         position: absolute;
         bottom: 65px;
         left: 17px;
-        z-index: 20;
-        
+        z-index: 20;        
     }
-
     .container-hero__image-point {
         position: absolute;
         bottom: 0px;
         left: 0px;
-        z-index: 10;
-        
-
+        z-index: 10; 
+    }
+    .container-hero__backlight {
+        position: absolute;
+        bottom: 0px;
+        right: 65px;
+        z-index: 20;
+    
+        width: 477px;
+        height: 589px;
+        background: rgba(252, 252, 252, 0.44);
+        filter: blur(50px);
     }
 
     .container-hero__btn-list {
@@ -237,7 +322,6 @@
     }
 
     .container-hero__image-ice-cream {
-
         position: absolute;
         bottom: 0px;
         right: 102px;
