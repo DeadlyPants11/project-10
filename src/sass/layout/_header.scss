@@ -18,7 +18,7 @@
   background-color: var(--color-background);
   margin-left: auto;
   line-height: 0;
-  cursor: pointer;
+  cursor: url(../images/cursor.png), auto;
 
   @media screen and (min-width: 1200px) {
     display: none;
@@ -81,7 +81,7 @@
   border: none;
   padding: 0;
   line-height: 0;
-  cursor: pointer;
+  cursor: url(../images/cursor.png), auto;
   width: 32px;
   height: 32px;
 }
@@ -117,10 +117,12 @@
 }
 
 .mobile-navigation__link {
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 1.22;
+  @include font-mobile(32px, 700, 39px);
   color: var(--color-primary-text);
+
+  @media screen and (max-width: 319px) {
+    font-size: 10vw;
+  }
 
   @media screen and (min-width: 768px) {
     @include font-tablet(48px, 700, 59px);
@@ -146,7 +148,7 @@
   justify-content: center;
   align-items: center;
   gap: 7px;
-  cursor: pointer;
+  cursor: url(../images/cursor.png), auto;
 
   @media screen and (min-width: 1200px) {
     align-self: flex-end;
@@ -175,6 +177,7 @@
   font-size: 16px;
   line-height: 1.25;
   color: var(--color-primary-text);
+  cursor: url(../images/cursor.png), auto;
 }
 
 .menu-navigation__link:hover,
@@ -184,6 +187,7 @@
 
 .logo {
   max-width: 41px;
+  cursor: url(../images/cursor.png), auto;
 
   @media screen and (min-width: 48px) {
     max-width: 48px;
