@@ -1,7 +1,7 @@
 // <<<<<<<<<<--MOBILE-->>>>>>>>>>>>
 @media screen and (max-width: 767px) {
     .container-hero {        
-        height: 502px;
+        height: 453px;
         padding-top: 61px;
         padding-left: 20px;
 
@@ -23,7 +23,10 @@
         font-size: 34px;
         line-height: 0.97;
     }
-    .container-hero__quantity-item, .container-hero__item-list, .container-hero__image-plate {
+    .container-hero__quantity-item, 
+    .container-hero__item-list, 
+    .container-hero__image-plate, 
+    .container-hero__description {
         display: none;
     }
     .container-hero__image-point {
@@ -33,17 +36,37 @@
         z-index: 20;
         left: 0px; 
     }
-    // .container-hero__image-ice-cream {
-    //     max-width: 157px;
-    //     height: 207px;
-    //     position: absolute;        
-    //     bottom: 0px;
-    //     left: 82px;        
-       
-    //     z-index: 30;
+    .container-hero__backlight {
+        position: absolute;
+        bottom: 0px;
+        right: 68px;
+        z-index: 20;
+        
+        width: 157px;
+        height: 207px;
 
-    //     border: 1px solid tomato;
-    // }
+        // background: rgba(252, 252, 252, 0.44);
+        // filter: blur(50px);
+    }
+    .container-hero__image-smile {
+        position: absolute;
+        bottom: 0px;
+        right: 68px;
+        z-index: 40;
+    }
+
+
+    .container-hero__image-ice-cream {
+        max-width: 157px;
+        height: 207px;
+        position: absolute;        
+        bottom: 0px;
+       right: 68px;        
+       
+        z-index: 30;
+
+        border: 1px solid tomato;
+    }
 
 
 
@@ -148,9 +171,24 @@
     font-weight: 400;
     color: var(--color-primary-text);
 }
-.container-hero__description-arrow {
-    width: 40px;
-}
+// .container-hero__description::after {
+//     content: "";
+//     width: 40px;
+//     height: 1px;
+//     display: block;
+//     background-color: white;
+
+//     border: 2px solid #131313;
+//         transform: rotate(-0.53deg);
+
+// }
+
+// .container-hero__description-arrow {
+//     width: 40px;
+//     fill: #FCFCFC;
+//     position: absolute;
+//     border: 2px solid #FCFCFC;
+// }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .container-hero__title {
         width: 181px;            
