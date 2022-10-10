@@ -1,0 +1,128 @@
+<header class="page-header">
+  <div class="container page-header_horisontal">
+    <a href="./index.html" class="logo"
+      ><picture>
+        <source
+          srcset="./images/logo/logo-d1x.png 1x, ./images/logo/logo-d2x.png 2x"
+          media="(min-width:1200px)"
+        />
+        <source
+          srcset="./images/logo/logo-t1x.png 1x, ./images/logo/logo-t2x.png 2x"
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="./images/logo/logo-m1x.png 1x, ./images/logo/logo-m2x.png 2x"
+          media="(max-width:767px)"
+        />
+        <img src="./images/logo/logo-m1x.png" alt="company logo" />
+      </picture>
+    </a>
+
+    <nav class="page-navigation">
+      <ul class="menu-navigation list">
+        <li class="menu-navigation__item">
+          <a href="#home" class="menu-navigation__link">Home</a>
+        </li>
+        <li class="menu-navigation__item">
+          <a href="#made" class="menu-navigation__link">How it’s made?</a>
+        </li>
+        <li class="menu-navigation__item">
+          <a href="#products" class="menu-navigation__link">Our products</a>
+        </li>
+        <li class="menu-navigation__item">
+          <a href="#contact" class="menu-navigation__link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <button type="button" class="menu-open-btn" data-menu-open>
+      <svg lang="en" aria-label="icon burger" width="32" height="32">
+        <use href="./images/sprite.svg#icon-Burger"></use>
+      </svg>
+    </button>
+
+    <button type="button" class="btn-buy-now btn-buy-now_mobile-hidden">
+      Buy now
+      <svg
+        lang="en"
+        aria-label="icon greater-than"
+        width="12"
+        height="12"
+        class="icon-buy"
+      >
+        <use href="./images/sprite.svg#icon-icon-buy"></use>
+      </svg>
+    </button>
+
+    <div class="mobile-menu" data-menu>
+      <div class="container mobile-menu-container">
+        <a href="./index.html" class="logo"
+          ><picture>
+            <source
+              srcset="
+                ./images/logo/logo-d1x.png 1x,
+                ./images/logo/logo-d2x.png 2x
+              "
+              media="(min-width:1200px)"
+            />
+            <source
+              srcset="
+                ./images/logo/logo-t1x.png 1x,
+                ./images/logo/logo-t2x.png 2x
+              "
+              media="(min-width:768px)"
+            />
+            <source
+              srcset="
+                ./images/logo/logo-m1x.png 1x,
+                ./images/logo/logo-m2x.png 2x
+              "
+              media="(max-width:767px)"
+            />
+            <img src="./images/logo/logo-m1x.png" alt="company logo" />
+          </picture>
+        </a>
+        <button class="mobile-close-btn" data-menu-close>
+          <svg
+            lang="en"
+            aria-label="icon cross"
+            class="mobile-close-icon"
+            width="20"
+            height="20"
+          >
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="mobile-navigation">
+          <li><a href="#home" class="mobile-navigation__link">Home</a></li>
+          <li>
+            <a
+              href="#made"
+              class="mobile-navigation__link mobile-navigation__link_black"
+              >How it’s made?</a
+            >
+          </li>
+          <li>
+            <a href="#products" class="mobile-navigation__link">Our products</a>
+          </li>
+          <li>
+            <a href="#contact" class="mobile-navigation__link">Contact</a>
+          </li>
+        </ul>
+
+        <button type="button" class="btn-buy-now btn-buy-now_mobile-visible">
+          Buy now
+          <svg
+            lang="en"
+            aria-label="icon greater-than"
+            width="12"
+            height="12"
+            class="icon-buy"
+          >
+            <use href="./images/sprite.svg#icon-icon-buy"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
