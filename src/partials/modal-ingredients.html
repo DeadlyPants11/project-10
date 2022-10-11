@@ -1,29 +1,9 @@
 <article>
-  <div class="modal-test-btn">
-    <button type="button" class="btn modal-open-icecream" modal-open-icecream>
-      <svg width="40px" height="18px">
-        <use href="/src/images/sprite.svg#icon-btn-arrow"></use>
-      </svg>
-    </button>
-
-    <button type="button" class="btn modal-open-icecoffee" modal-open-icecoffee>
-      <svg width="40px" height="18px">
-        <use href="/src/images/sprite.svg#icon-btn-arrow"></use>
-      </svg>
-    </button>
-
-    <button type="button" class="btn modal-open-milkshake" modal-open-milkshake>
-      <svg width="40px" height="18px">
-        <use href="/src/images/sprite.svg#icon-btn-arrow"></use>
-      </svg>
-    </button>
-  </div>
-
   <!-- ?Ice Cream -->
 
   <div class="backdrop is-hidden" data-modal-icecream>
-    <form class="form">
-      <div class="modal-ing">
+    <div class="modal-ing">
+      <form class="form">
         <button
           type="button"
           class="btn modal-ing__close-btn"
@@ -108,11 +88,11 @@
             </li>
           </ul>
         </div>
-        <div class="modal__form">
+        <div class="modal-form">
           <label>
             <input
               type="text"
-              class="form__input form__icecream"
+              class="modal-form__input modal-form__icecream"
               name="user-name"
               required
               pattern="[a-zA-Z]+"
@@ -122,7 +102,7 @@
           <label>
             <input
               type="tel"
-              class="form__input form__icecream"
+              class="modal-form__input modal-form__icecream"
               name="user-tel"
               required
               pattern="[+]{1}[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{3}"
@@ -133,22 +113,22 @@
           <label>
             <textarea
               type=""
-              class="form__comment form__icecream"
+              class="modal-form__comment modal-form__icecream"
               name="user__comment"
               placeholder="Comment"
             ></textarea>
           </label>
-          <button class="form__btn btn" type="submit">Submit</button>
+          <button class="modal-form__btn btn" type="submit">Submit</button>
         </div>
-      </div>
-    </form>
+      </form>
+    </div>
   </div>
 
   <!-- ?Ice Coffee -->
 
   <div class="backdrop is-hidden" data-modal-icecoffee>
-    <form class="form">
-      <div class="modal-ing">
+    <div class="modal-ing">
+      <form class="form">
         <button
           type="button"
           class="btn modal-ing__close-btn"
@@ -235,11 +215,11 @@
             </li>
           </ul>
         </div>
-        <div class="modal__form">
+        <div class="modal-form">
           <label>
             <input
               type="text"
-              class="form__input form__icecoffee"
+              class="modal-form__input modal-form__icecoffee"
               name="user-name"
               required
               pattern="[a-zA-Z]+"
@@ -249,7 +229,7 @@
           <label>
             <input
               type="tel"
-              class="form__input form__icecoffee"
+              class="modal-form__input modal-form__icecoffee"
               name="user-tel"
               required
               pattern="[+]{1}[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{3}"
@@ -259,22 +239,22 @@
           </label>
           <label>
             <textarea
-              class="form__comment form__icecoffee"
+              class="modal-form__comment modal-form__icecoffee"
               name="user__comment"
               placeholder="Comment"
             ></textarea>
           </label>
-          <button class="form__btn btn" type="submit">Submit</button>
+          <button class="modal-form__btn btn" type="submit">Submit</button>
         </div>
-      </div>
-    </form>
+      </form>
+    </div>
   </div>
 
   <!-- ?Milkshake -->
 
   <div class="backdrop is-hidden" data-modal-milkshake>
-    <form class="form">
-      <div class="modal-ing">
+    <div class="modal-ing">
+      <form class="form">
         <button
           type="button"
           class="btn modal-ing__close-btn"
@@ -361,11 +341,11 @@
             </li>
           </ul>
         </div>
-        <div class="modal__form">
+        <div class="modal-form">
           <label>
             <input
               type="text"
-              class="form__input form__milkshake"
+              class="modal-form__input modal-form__milkshake"
               name="user-name"
               required
               pattern="[a-zA-Z]+"
@@ -375,7 +355,7 @@
           <label>
             <input
               type="tel"
-              class="form__input form__milkshake"
+              class="modal-form__input modal-form__milkshake"
               name="user-tel"
               required
               pattern="[+]{1}[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{3}"
@@ -385,14 +365,14 @@
           </label>
           <label>
             <textarea
-              class="form__comment form__milkshake"
+              class="modal-form__comment modal-form__milkshake"
               name="user__comment"
               placeholder="Comment"
             ></textarea>
           </label>
-          <button class="form__btn btn" type="submit">Submit</button>
+          <button class="modal-form__btn btn" type="submit">Submit</button>
         </div>
-      </div>
-    </form>
+      </form>
+    </div>
   </div>
 </article>
