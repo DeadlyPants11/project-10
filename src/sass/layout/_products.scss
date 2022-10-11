@@ -1,3 +1,9 @@
+.container {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .products-owerlay {
     width: 100%;
     margin-left: auto;
@@ -78,27 +84,32 @@
     gap: 40px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     text-align: center;
     width: 100%;
-    
+  
 @media screen and (min-width: 480px) {
-    flex-direction: row;
-   
-        // flex-wrap: wrap;
-        // justify-content: start;
+        flex-direction: row;
+        flex-wrap: wrap;
         margin-left: auto;
         margin-right: auto;
         width: 100%;
 }
 
 @media screen and (min-width: 768px) {
-        flex-direction: row;
-            flex-wrap: wrap;
+        text-align: center;
+        max-width: 100%;
+        gap: 16px;
+        display: flex;
 }
 
 @media screen and (min-width: 1200px)  {
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 95px) /3);
 }
 }
 
@@ -145,10 +156,6 @@
     background: #D6936D;
     border-radius: 24px;
 }
-
-// @media screen and (min-width: 1200px) {
-//     flex-basis: calc((100% - 95px) /3);
-// }
 }
 
 .products-name {
@@ -199,11 +206,12 @@
 .products-name::before {
     content: url(/src/images/tablet-png/kelsey-curtis-t-1x.png);
     position: absolute;
-    width: 200.33px;
+    width: 100%;
     height: 199.68px;
     left: 0px;
     top: 0px;
     border-radius: 100.166px;
+    object-fit: contain;
     transform: translateY(-230);
 
 @mixin сentering-x() {
@@ -239,19 +247,56 @@
         height: 132.27px;
     }
 
+@media screen and (min-width: 480px) {
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    height: 147px;
+    padding-left: 26px;
+    padding-right: 26px;
+}
+
+@media screen and (min-width: 1200px) {
+    padding-left: 63px;
+    padding-right: 63px;
+}
 }
 
 .btn-open {
-    // position: absolute;
+    position: relative;
     box-sizing: border-box;
     width: 40px;
     height: 0px;
     border: 2px solid #131313;
     border: none;
+    padding-bottom: 60px;
 }
 
-.open-icon {
-    width: 40px;
+.btn-open::before {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    mask-image: url(/src/images/sprite.svg#icon-frame-53);
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+}
+
+// .open-icon {
+//     position: absolute;
+//     left: 50%;
+//     padding-bottom: 60px;
+// }
+
+.open-icon:hover {
+    width: 50px;
     height: 0px;
-    
+    left: 50%;
+    top: 92px;
 }
