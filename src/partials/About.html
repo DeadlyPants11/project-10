@@ -1,0 +1,90 @@
+<section class="about__container">
+  <div class="headings_container">
+    <h2 class="heading__title">Tradition and love</h2>
+    <h3 class="heading__sub-title">How it's made?</h3>
+  </div>
+
+  <div class="content__container">
+    <div class="image__container">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/desktop-png/cow-d-1x.png  1x,
+            ./images/desktop-png/cow-d-@2x.png 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/tablet-png/cow-t-1x.png  1x,
+            ./images/tablet-png/cow-t-@2x.png 2x
+          "
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/mobile-png/cow-m-1x.png  1x,
+            ./images/mobile-png/cow-m-@2x.png 2x
+          "
+        />
+
+        <img
+          class="picture"
+          alt="a cow eating grass"
+          src="./images/mobile-png/cow-m-1x.png"
+        />
+      </picture>
+    </div>
+    <div class="text__container">
+      <p>
+        Ice is a place where you will become not only a little happier, but also
+        healthier. Health is the main value for us, and we follow it when
+        creating our handmade desserts.
+      </p>
+      <p>
+        We use traditional recipes and 100% natural ingredients. Our products
+        are so natural that they can be given to children from the age of three
+        years. Sweets lovers can expect 55 types of ice cream, 15 types of
+        coffee and 23 milkshakes.
+      </p>
+      <p>This is enough to choose ice cream and coffee for any mood!</p>
+      <button class="btn btn-read-more" onclick type="button" modal-video-open>
+        Read more
+        <svg
+          class="button-read-more__icon"
+          style="height: 12px; width: 12px; margin-left: 10px"
+        >
+          <use href="./images/sprite.svg#icon-btn-arrow"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- MODAL WINDOW -->
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal-video">
+      <button type="button" class="modal-video__close-btn" modal-video-close>
+        <svg style="width: 16; height: 16px">
+          <use href="./images/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+      <p class="modal-video__heading">How it's made</p>
+      <div class="modal-video__content">
+        <iframe
+          class="modal-video__video"
+          src="https://www.youtube.com/embed/8WEMZ86Eho8"
+          title="how it's made"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <p class="modal-video__para">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
