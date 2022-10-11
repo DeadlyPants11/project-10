@@ -1,27 +1,42 @@
 // <<<<<<<<<<--MOBILE-->>>>>>>>>>>>
 @media screen and (max-width: 767px) {
     .container-hero {        
-        height: 453px;
-        padding-top: 61px;
-        padding-left: 20px;
-
-        position: relative;
-
-        background-color: var(--color-background);
-
-        border: 1px solid tomato;
+        height: 450px;
+        padding: 58px 20px 0px 20px;        
     }
     .container-hero__title {
         width: 100%;
-        max-width: 247px;
         font-size: 26px;
         line-height: 1.27;
         letter-spacing: 0.04em;
-        margin-bottom: 32px;        
+        margin-bottom: 32px;               
     }
     .container-hero__title-part {
         font-size: 34px;
         line-height: 0.97;
+    }
+    .container-hero__image {
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .container-hero__image-point {
+        z-index: 20;        
+    }
+    .container-hero__backlight {
+        z-index: 10;        
+        width: 167px;
+        height: 218px;
+        background: rgba(252, 252, 252, 0.44);
+            filter: blur(26.8405px);
+    }
+    .container-hero__image-ice-cream {             
+        z-index: 30;        
+    }
+    .container-hero__image-smile {
+        bottom: 49.76px;
+        z-index: 40;
     }
     .container-hero__quantity-item, 
     .container-hero__item-list, 
@@ -29,141 +44,24 @@
     .container-hero__description {
         display: none;
     }
-    .container-hero__image-point {
-        width: 100%;
-        position: absolute;
-        bottom: 0px;
-        z-index: 20;
-        left: 0px; 
-    }
-    .container-hero__backlight {
-        position: absolute;
-        bottom: 0px;
-        right: 68px;
-        z-index: 20;
-        
-        width: 157px;
-        height: 207px;
-
-        // background: rgba(252, 252, 252, 0.44);
-        // filter: blur(50px);
-    }
-    .container-hero__image-smile {
-        position: absolute;
-        bottom: 0px;
-        right: 68px;
-        z-index: 40;
-    }
-
-
-    .container-hero__image-ice-cream {
-        max-width: 157px;
-        height: 207px;
-        position: absolute;        
-        bottom: 0px;
-       right: 68px;        
-       
-        z-index: 30;
-
-        border: 1px solid tomato;
-    }
-
-
-
-
 }
-// <<<<<<<<<<--TABLET-->>>>>>>>>>>>
-@media screen and (min-width: 768px) {
-    .container-hero {        
-        height: 349px;
-        padding-top: 38px;        
-        background-color: var(--color-background);
-        position: relative;
+@media screen and (max-width: 1199px) {
+    .container-hero__btn-list {
+        display: flex;
+        gap: 8px;
     }
-
-    .container-hero__title {        
-        font-size: 18px;
-        line-height: 1.28;
-        margin-bottom: 20px;
+    .container-hero__btn-link {
+        font-size: 8px;
+        line-height: 1.25;
+        border-radius: 8px;
+        padding: 7px 11px;
     }
-    .container-hero__quantity-item {
-        font-weight: 900;
-        font-size: 28px;
-        line-height: 1.21;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-        margin-bottom: 4px;
-        text-align: right;
-    }
-    .container-hero__item-list {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        text-align: right;
-        color: var(--color-primary-text)
-    }
-    .container-hero__list {
-        margin-bottom: 20px;
-    }
-    .container-hero__item {
-        position: absolute;
-        right: 32px;
-        top: 28px;
-    }
-    .container-hero__description {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-
-        font-size: 12px;
-        line-height: 1.4;
-        max-width: 151px;
-        // min-height: 80px;
-        color: var(--color-primary-text);
-    
-        position: absolute;
-        left: 217px;
-        bottom: 52px;
-        z-index: 60;
-
-    }
-// <<<<<<<<<<--TABL IMAGES-->>>>>>>>>>>>
-    .container-hero__image-plate {
-        width: 152px;
-        position: absolute;
-        bottom: 13px;
-        left: 32px;
-        z-index: 20;        
-    }
-    .container-hero__image-point {        
-        position: absolute;
-        bottom: 0px;
-        left: 0px;
-        z-index: 10; 
-    }
-    .container-hero__backlight {
-        width: 466px;
-        position: absolute;
-        bottom: 0px;
-        right: 80px;
-        z-index: 20;
-        background: rgba(252, 252, 252, 0.44);
-            filter: blur(27.9859px);        
-    }
-    .container-hero__image-ice-cream {
-        position: absolute;
-        bottom: 0px;
-        z-index: 30;
-    }
-    .container-hero__image-smile {
-        position: absolute;        
-        z-index: 40;
-    }
-
-    
 }
-
 // <<<<<<<<<<--GENERAL-->>>>>>>>>>>>
+.container-hero {
+    background-color: var(--color-background);
+    position: relative;
+}
 .container-hero__title {    
     font-family: 'Seymour One';
     font-style: normal;
@@ -171,6 +69,117 @@
     font-weight: 400;
     color: var(--color-primary-text);
 }
+.container-hero__btn-link {
+    font-family: 'Montserrat';
+    font-style: normal;
+    text-decoration: underline;
+    border: none;
+    background: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--color-btn-default);
+
+    &:focus,
+    &:hover {
+        text-decoration: none;
+        color: var(--color-secondary-text);
+        border: 2px solid #F8D24E;
+        outline: none;
+        border-color: var(--color-btn-default);
+    }
+}
+// <<<<<<<<<<--TABLET-->>>>>>>>>>>>
+@media screen and (min-width: 768px) {
+    .container-hero {        
+        height: 348px;
+        padding: 37px 32px 0px 32px;        
+    }
+    .container-hero__title {        
+        font-size: 18px;
+        line-height: 1.28;
+        margin-bottom: 20px;
+    }
+    .container-hero__item {
+        font-family: 'Montserrat';
+        font-style: normal;
+        text-transform: uppercase;
+        text-align: right;        
+        right: 32px;
+        top: 27px;
+    }
+    .container-hero__quantity-item {
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 1.21;
+        letter-spacing: 0.04em;        
+        margin-bottom: 4px;  
+        color: var(--color-secondary-text);      
+    }
+    .container-hero__item-list {        
+        font-weight: 400;        
+        color: var(--color-primary-text)
+    }
+    .container-hero__list {
+        margin-bottom: 20px;
+    }  
+    .container-hero__description, 
+    .container-hero__image, 
+    .container-hero__item {
+        position: absolute;
+        bottom: 0px;
+    }
+    .container-hero__description {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.4;
+        max-width: 151px;        
+        color: var(--color-primary-text); 
+        left: 217px;
+        bottom: 52px;
+        z-index: 60;
+    }    
+    .container-hero__image-plate {
+        bottom: 13px;
+        left: 32px;
+        z-index: 25;        
+    }
+    .container-hero__image-point {
+        left: 0px;
+        z-index: 20; 
+    }
+    .container-hero__backlight {
+        width: 466px;
+        right: 80px;
+        z-index: 10;
+        background: rgba(252, 252, 252, 0.44);
+            filter: blur(27.9859px);        
+    }
+    .container-hero__image-ice-cream {        
+        z-index: 30;
+    }
+    .container-hero__image-smile {             
+        z-index: 40;
+    }    
+}
+
+
+// .container-hero__title {
+//     width: 100%;
+//     max-width: 247px;
+//     font-size: 26px;
+//     line-height: 1.27;
+//     letter-spacing: 0.04em;
+//     margin-bottom: 32px;
+
+// }
+
+// <<<<<<<<<<--GENERAL-->>>>>>>>>>>>
+
 // .container-hero__description::after {
 //     content: "";
 //     width: 40px;
@@ -190,9 +199,6 @@
 //     border: 2px solid #FCFCFC;
 // }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-    .container-hero__title {
-        width: 181px;            
-    }
     .container-hero__title-part {
         font-size: 24px;        
     }
@@ -217,54 +223,18 @@
     }
 
 }
-@media screen and (max-width: 1199px) {
-    .container-hero__btn-list {
-        display: flex;
-        gap: 8px;
-}
-    .container-hero__btn-link {        
-        font-size: 8px;
-        line-height: 1.25;
-        border-radius: 8px;
-        padding: 7px 12px;
-    }
-    
-}
-.container-hero__btn-link {
-    font-family: 'Montserrat';
-    font-style: normal;
-    text-decoration: underline;
-    border: none;
-    background: none;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    font-weight: 600;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    color: var(--color-btn-default);
-    
-    &:focus,
-    &:hover {
-        text-decoration: none;
-        color: var(--color-secondary-text);
-        border: 2px solid #F8D24E;
-        outline: none;
-        border-color: var(--color-btn-default);
-    }
-}
+
+
 
 
 
 // <<<<<<<<<<--DESKTOP-->>>>>>>>>>>>
 @media screen and (min-width: 1200px) {
     .container-hero {        
-        height: 591px;
-        padding-top: 45px;        
-        background-color: var(--color-background);
-        position: relative;
+        height: 587px;
+        padding-top: 41px;
     }
-    .container-hero__title {
-        max-width: 367px;
+    .container-hero__title {        
         font-size: 38px;
         line-height: 1.26;
         letter-spacing: 0.04em;
@@ -272,24 +242,19 @@
     .container-hero__btn-link {
         font-size: 14px;
         line-height: 1.29;
-
         padding: 12px 34px;
         border-radius: 10px;
     }
     .container-hero__btn-list {
         display: flex;
         gap: 12px;
-}
-
+    }
     .container-hero__description {        
         font-size: 14px;        
         max-width: 220px;
-        
-            
         position: absolute;
         left: 256px;
-        bottom: 111px;
-        
+        bottom: 111px;        
     }
 
     .container-hero__quantity-item {        
