@@ -40,6 +40,7 @@
     &:hover{
         text-decoration-line: underline;
         color: var(--color-text-orange);
+        cursor: url(../images/cursor.png), auto;
     }
 
     &:focus {
@@ -77,6 +78,7 @@
 
     &:hover {
         color: var(--color-text-orange);
+        cursor: url(../images/cursor.png), auto;
     }
 
     &:focus {
@@ -91,16 +93,13 @@
 
     &:hover {
         color: var(--color-text-orange);
+        cursor: url(../images/cursor.png), auto;
     }
 
     &:focus {
         color: var(--color-text-orange);
         outline: solid 1px var(--color-text-orange);
     }
-}
-
-.contacts__btns {
-    margin-bottom: 39px;
 }
 
 .btn-icon {
@@ -127,6 +126,7 @@
 
     &:hover {
         border-color: var(--color-btn-hover_focus);
+        cursor: url(../images/cursor.png), auto;
     }
 
     &:focus {
@@ -150,6 +150,7 @@
 
     &:hover{
         background-color: var(--color-btn-hover_focus);
+        cursor: url(../images/cursor.png), auto;
     }
 
     &:focus {
@@ -168,6 +169,10 @@
         display: flex;
         gap: 16px;
         margin-bottom: 60px;
+    }
+
+    .contacts__btn-location{
+        margin-bottom: 0;
     }
 
     .contacts__block{
@@ -224,7 +229,6 @@
         display: flex;
         justify-content: center;
         gap: 16px;
-        margin-bottom: 40px;
     }
 }
 
@@ -263,9 +267,5 @@
 
     .contacts__mail {
         @include font-desktop(16px, 500, 29px);
-    }
-
-    .contacts__btns {
-        margin-bottom: 120px;
     }
 }
