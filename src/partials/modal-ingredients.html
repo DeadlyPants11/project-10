@@ -1,0 +1,378 @@
+<article>
+  <!-- ?Ice Cream -->
+
+  <div class="backdrop is-hidden" data-modal-icecream>
+    <div class="modal-ing">
+      <form class="form">
+        <button
+          type="button"
+          class="btn modal-ing__close-btn"
+          modal-close-icecream
+        >
+          <svg width="11px" height="11px">
+            <use href="/src/images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-ing__form-title">Ice Cream</p>
+        <div class="modal-ing__img-container">
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                /src/images/mobile-png/modal-ingredients-m-1x.png  1x,
+                /src/images/mobile-png/modal-ingredients-m-@2x.png 2x
+              "
+              type="image/jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                /src/images/desktop-png/modal-ingredients-d-1x.png  1x,
+                /src/images/desktop-png/modal-ingredients-d-@2x.png 2x
+              "
+              type="image/jpg"
+            />
+            <img
+              class="modal-ing__img"
+              src="/src/images/desktop-png/modal-ingredients-d-1x.png"
+              alt="foto"
+            />
+          </picture>
+        </div>
+        <div class="modal-ing__nutritional-value">
+          <ul class="modal-ing__list">
+            <li class="modal-ing__item">
+              <p class="text gramm">320</p>
+              <p class="text">kcal</p>
+            </li>
+            <li class="modal-ing__item">
+              <p class="text gramm">4g</p>
+              <p class="text">Prote...</p>
+            </li>
+            <li class="modal-ing__item">
+              <p class="text gramm">8,2g</p>
+              <p class="text">Fats</p>
+            </li>
+            <li class="modal-ing__item">
+              <p class="text gramm">40,4g</p>
+              <p class="text">Carbs</p>
+            </li>
+          </ul>
+        </div>
+        <div class="ing">
+          <p class="ing__title">Ingredients</p>
+          <ul class="ing__list list">
+            <li class="ing__item">
+              <p class="text">Milk</p>
+              <p class="text">100 ml</p>
+            </li>
+            <li class="ing__item">
+              <p class="text">Belgian chocolate</p>
+              <p class="text">20 g</p>
+            </li>
+            <li class="ing__item">
+              <p class="text">Cream</p>
+              <p class="text">150 ml</p>
+            </li>
+            <li class="ing__item">
+              <p class="text">Cocoa powder</p>
+              <p class="text">30 g</p>
+            </li>
+            <li class="ing__item">
+              <p class="text">Sugar</p>
+              <p class="text">40 g</p>
+            </li>
+            <li class="ing__item">
+              <p class="text">Vanilla sugar</p>
+              <p class="text">10 g</p>
+            </li>
+          </ul>
+        </div>
+        <div class="modal-form">
+          <label>
+            <input
+              type="text"
+              class="modal-form__input modal-form__icecream"
+              name="user-name"
+              required
+              pattern="[a-zA-Z]+"
+              placeholder="Name"
+            />
+          </label>
+          <label>
+            <input
+              type="tel"
+              class="modal-form__input modal-form__icecream"
+              name="user-tel"
+              required
+              pattern="[+]{1}[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{3}"
+              title="+xxx-xxx-xxx-xxx"
+              placeholder="Phone"
+            />
+          </label>
+          <label>
+            <textarea
+              type=""
+              class="modal-form__comment modal-form__icecream"
+              name="user__comment"
+              placeholder="Comment"
+            ></textarea>
+          </label>
+          <button class="modal-form__btn btn" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ?Ice Coffee -->
+
+  <div class="backdrop is-hidden" data-modal-icecoffee>
+    <div class="modal-ing">
+      <form class="form">
+        <button
+          type="button"
+          class="btn modal-ing__close-btn"
+          modal-close-icecoffee
+        >
+          <svg width="11px" height="11px">
+            <use href="/src/images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-ing__form-title">Ice Coffee</p>
+        <div
+          class="modal-ing__img-container modal-ing__img-container-icecoffee"
+        >
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                /src/images/mobile-png/modal-pariwat-pannium-m-1x.png  1x,
+                /src/images/mobile-png/modal-pariwat-pannium-m-@2x.png 2x
+              "
+              type="image/jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                /src/images/desktop-png/modal-pariwat-pannium-d-1x.png  1x,
+                /src/images/desktop-png/modal-pariwat-pannium-d-@2x.png 2x
+              "
+              type="image/jpg"
+            />
+            <img
+              class="modal-ing__img"
+              src="/src/images/desktop-png/modal-pariwat-pannium-d-1x.png"
+              alt="foto"
+            />
+          </picture>
+        </div>
+        <div class="modal-ing__nutritional-value">
+          <ul class="modal-ing__list">
+            <li class="modal-ing__item modal-ing__item-icecoffee">
+              <p class="text gramm gramm-icecoffee">320</p>
+              <p class="text">kcal</p>
+            </li>
+            <li class="modal-ing__item modal-ing__item-icecoffee">
+              <p class="text gramm gramm-icecoffee">4g</p>
+              <p class="text">Prote...</p>
+            </li>
+            <li class="modal-ing__item modal-ing__item-icecoffee">
+              <p class="text gramm gramm-icecoffee">8,2g</p>
+              <p class="text">Fats</p>
+            </li>
+            <li class="modal-ing__item modal-ing__item-icecoffee">
+              <p class="text gramm gramm-icecoffee">40,4g</p>
+              <p class="text">Carbs</p>
+            </li>
+          </ul>
+        </div>
+        <div class="ing">
+          <p class="ing__title">Ingredients</p>
+          <ul class="ing__list list">
+            <li class="ing__item">
+              <p class="text">Black coffee</p>
+              <p class="text">50 ml</p>
+            </li>
+            <li class="ing__item">
+              <p class="text">Chilled milk</p>
+              <p class="text">100 ml</p>
+            </li>
+            <li class="ing__item">
+              <p class="text">Cream</p>
+              <p class="text">40 g</p>
+            </li>
+            <li class="ing__item">
+              <p class="text">Ice cubes</p>
+              <p class="text">3-4</p>
+            </li>
+            <li class="ing__item">
+              <p class="text">Belgian chocolate</p>
+              <p class="text">30 g</p>
+            </li>
+            <li class="ing__item">
+              <p class="text">Sugar</p>
+              <p class="text">20 g</p>
+            </li>
+          </ul>
+        </div>
+        <div class="modal-form">
+          <label>
+            <input
+              type="text"
+              class="modal-form__input modal-form__icecoffee"
+              name="user-name"
+              required
+              pattern="[a-zA-Z]+"
+              placeholder="Name"
+            />
+          </label>
+          <label>
+            <input
+              type="tel"
+              class="modal-form__input modal-form__icecoffee"
+              name="user-tel"
+              required
+              pattern="[+]{1}[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{3}"
+              title="+xxx-xxx-xxx-xxx"
+              placeholder="Phone"
+            />
+          </label>
+          <label>
+            <textarea
+              class="modal-form__comment modal-form__icecoffee"
+              name="user__comment"
+              placeholder="Comment"
+            ></textarea>
+          </label>
+          <button class="modal-form__btn btn" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ?Milkshake -->
+
+  <div class="backdrop is-hidden" data-modal-milkshake>
+    <div class="modal-ing">
+      <form class="form">
+        <button
+          type="button"
+          class="btn modal-ing__close-btn"
+          modal-close-milkshake
+        >
+          <svg width="11px" height="11px">
+            <use href="/src/images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-ing__form-title">Milkshake</p>
+        <div
+          class="modal-ing__img-container modal-ing__img-container-milkshake"
+        >
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                /src/images/mobile-png/modal-victor-rutka-m-1x.png  1x,
+                /src/images/mobile-png/modal-victor-rutka-m-@2x.png 2x
+              "
+              type="image/jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                /src/images/desktop-png/modal-victor-rutka-d-1x.png  1x,
+                /src/images/desktop-png/modal-victor-rutka-d-@2x.png 2x
+              "
+              type="image/jpg"
+            />
+            <img
+              class="modal-ing__img"
+              src="/src/images/desktop-png/modal-victor-rutka-d-1x.png"
+              alt="foto"
+            />
+          </picture>
+        </div>
+        <div class="modal-ing__nutritional-value">
+          <ul class="modal-ing__list">
+            <li class="modal-ing__item modal-ing__item-milkshake">
+              <p class="text gramm gramm-milkshake">320</p>
+              <p class="text">kcal</p>
+            </li>
+            <li class="modal-ing__item modal-ing__item-milkshake">
+              <p class="text gramm gramm-milkshake">4g</p>
+              <p class="text">Prote...</p>
+            </li>
+            <li class="modal-ing__item modal-ing__item-milkshake">
+              <p class="text gramm gramm-milkshake">8,2g</p>
+              <p class="text">Fats</p>
+            </li>
+            <li class="modal-ing__item modal-ing__item-milkshake">
+              <p class="text gramm gramm-milkshake">40,4g</p>
+              <p class="text">Carbs</p>
+            </li>
+          </ul>
+        </div>
+        <div class="ing">
+          <p class="ing__title">Ingredients</p>
+          <ul class="ing__list list">
+            <li class="ing__item">
+              <p class="text">Сhocolate syrup</p>
+              <p class="text">20 ml</p>
+            </li>
+            <li class="ing__item">
+              <p class="text">Milk</p>
+              <p class="text">80 ml</p>
+            </li>
+            <li class="ing__item">
+              <p class="text">Chocolate ice cream</p>
+              <p class="text">200 g</p>
+            </li>
+            <li class="ing__item">
+              <p class="text">Black chocolate</p>
+              <p class="text">10 g</p>
+            </li>
+            <li class="ing__item">
+              <p class="text">Sugar</p>
+              <p class="text">20 g</p>
+            </li>
+            <li class="ing__item">
+              <p class="text">Vanilla sugar</p>
+              <p class="text">10 g</p>
+            </li>
+          </ul>
+        </div>
+        <div class="modal-form">
+          <label>
+            <input
+              type="text"
+              class="modal-form__input modal-form__milkshake"
+              name="user-name"
+              required
+              pattern="[a-zA-Z]+"
+              placeholder="Name"
+            />
+          </label>
+          <label>
+            <input
+              type="tel"
+              class="modal-form__input modal-form__milkshake"
+              name="user-tel"
+              required
+              pattern="[+]{1}[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{3}"
+              title="+xxx-xxx-xxx-xxx"
+              placeholder="Phone"
+            />
+          </label>
+          <label>
+            <textarea
+              class="modal-form__comment modal-form__milkshake"
+              name="user__comment"
+              placeholder="Comment"
+            ></textarea>
+          </label>
+          <button class="modal-form__btn btn" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</article>
