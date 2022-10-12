@@ -13,28 +13,34 @@
     scroll-behavior: smooth;
     border: 2px solid var(--color-btn-default);
     border-radius: 10px;
-    padding: 28px 30px 28px 28px;
-    
+    padding: 28px 30px 28px 28px;   
 
 }
+
 .modal-franchise-window__close-btn {
     position: absolute;
-    display: flex;
-    background-color: transparent;
     width: 16px;
     height: 16px;
-    border: 1px solid transparent;
-    border-radius: 50%;
-    padding: 3.55px;
+    display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 50%;
+    border-color: transparent;
     top: 8px;
-    right: 8px;
-    // transition: fill var(--transit-dur-func);
+    right: 8px;    
+    transition: fill var(--transition-duration-function);
+    cursor: url(../images/cursor.png), auto;
     
-    &:hover, &:focus {
-        fill: var(--color-btn-default);
-    }
+        &:hover, &:focus {
+            fill: var(--color-btn-default);
+        }
+
+}
+.modal-franchise-window__close-button-img {
+    width: 9px;
+    height: 9px;
 }
 
 // Модальная форма
@@ -76,7 +82,7 @@
 }
  .modal-franchise-form__input:focus, .modal-franchise-form__coment:focus {
      outline-color: var(--color-btn-default);
-    //  transition: outline-color var(--transit-dur-func);
+     transition: outline-color var(--transition-duration-function);
  }
 input::-webkit-input-placeholder {
     color: var(--color-secondary-text);
@@ -95,12 +101,21 @@ textarea::-webkit-input-placeholder {
     font-weight: 600;
     font-size: 12px;
     line-height: 1.25;
-    cursor: pointer;
+    cursor: url(../images/cursor.png), auto;
+    transition: background-color var(--transition-duration-function);
+
+    &:hover {
+        background-color: var(--color-btn-hover_focus);
+    }
+    &:focus {
+        background-color: var(--color-btn-hover_focus);
+        color: var(--color-primary-text);
+    }
 }
 
-@media screen and (min-width: 280px) {
+@media screen and (min-width: 480px) {
     .modal-franchise-window {
-        width: 280px;
+        width: 480px;
     }    
 }
 @media screen and (min-width: 768px) {
@@ -149,7 +164,10 @@ textarea::-webkit-input-placeholder {
         }
     .modal-franchise-window__close-btn {
         width: 20px;
-        height: 20px;
-        padding: 4.4px;
+        height: 20px;       
+    }
+    .modal-franchise-window__close-button-img {
+        width: 11px;
+        height: 11px;
     }
 }
