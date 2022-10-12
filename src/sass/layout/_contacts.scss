@@ -36,6 +36,11 @@
     @include font-mobile(12px, 500, 22px);
     color: var(--color-text-orange);
     margin-bottom: 24px;
+    transition: text-decoration-line var(--transition-duration-function);
+    transition: color var(--transition-duration-function);
+    transition: outline var(--transition-duration-function);
+
+
 
     &:hover {
         text-decoration-line: underline;
@@ -75,6 +80,8 @@
 .contacts__tel{
     @include font-mobile(12px, 500, 18px);
     color: var(--color-secondary-text);
+    transition: color var(--transition-duration-function);
+    transition: outline var(--transition-duration-function);
 
     &:hover {
         color: var(--color-text-orange);
@@ -90,6 +97,8 @@
 .contacts__mail{
     @include font-mobile(12px, 500, 18px);
     color: var(--color-secondary-text);
+    transition: color var(--transition-duration-function);
+    transition: outline var(--transition-duration-function);
 
     &:hover {
         color: var(--color-text-orange);
@@ -105,6 +114,7 @@
 .btn-icon {
     width: 12px;
     height: 12px;
+    transition: fill var(--transition-duration-function);
 
     .contacts__btn-location:focus & {
         fill: var(--color-primary-text);
@@ -123,6 +133,10 @@
     margin-left: auto;
     margin-right: auto;
     @include font-btn();
+    transition: border-color var(--transition-duration-function);
+    transition: color var(--transition-duration-function);
+    transition: outline var(--transition-duration-function);
+    
 
     &:hover {
         border-color: var(--color-btn-hover_focus);
@@ -147,6 +161,9 @@
     margin-left: auto;
     margin-right: auto;
     @include font-btn();
+    transition: background-color var(--transition-duration-function);
+    transition: color var(--transition-duration-function);
+    transition: outline var(--transition-duration-function);
 
     &:hover{
         background-color: var(--color-btn-hover_focus);
