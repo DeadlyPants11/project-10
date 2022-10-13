@@ -1,0 +1,705 @@
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 767px) {
+
+    .products-owerlay {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background: #F5F5F5;
+        background-image: url(/src/images/mobile-png/background-customer-m-1x.png);
+    }
+
+    .products-text {
+        font-family: 'Montserrat';
+        padding-top: 60px;
+        padding-bottom: 12px;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.22;
+        text-align: center;
+        text-transform: uppercase;
+        color: #131313;
+    }
+
+    .products-title {
+        font-family: 'Seymour One';
+        padding-bottom: 148px;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 1.26;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #131313;
+    }
+
+    .products {
+        gap: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+        width: 320px;
+    }
+
+    .card-set {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .products-item {
+        width: 320px;
+        left: 20px;
+        top: 782px;
+        background: #AEC6A5;
+        border-radius: 24px;
+        margin-bottom: 164px;
+        background: #AEC6A5;
+
+        &:last-child {
+            margin-bottom: 60px;
+        }
+
+        &:nth-last-child(2) {
+            background: #EFD478;
+            border-radius: 24px;
+        }
+
+        &:last-child {
+            background: #D6936D;
+            border-radius: 24px;
+        }
+    }
+
+    .products-ice-cream {
+        position: relative;
+        font-family: 'Montserrat';
+        margin-top: 123px;
+        margin-bottom: 40px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #131313;
+    }
+
+    // .products-ice-cream::before {
+    //     content: url(/src/images/tablet-png/kelsey-curtis-t-1x.png);
+    //     position: absolute;
+    //     width: 100%;
+    //     height: 199.68px;
+    //     left: 0px;
+    //     top: 0px;
+    //     border-radius: 100.166px;
+    //     object-fit: contain;
+    //     transform: translateY(-350);
+
+    // @mixin сentering-x() {
+    //     position: absolute;
+    //     left: 50%;
+    //     transform: translateX(-50%);
+    // }
+    // }
+
+    // .circle {
+    //     position: absolute;
+    //         top: 50px;
+    //         border-radius: 50%/50%;
+    //         padding-bottom: 7px;
+    //         background-color: rgba(156, 190, 143, 0.7);
+    //         box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+    //         z-index: 2;
+    //         transform: translate(0%, -180%);
+    // }
+
+    // .products-ice-cream-circle {
+    //         background-color: #AEC6A5;
+    //         width: 200px;
+    //         height: 200px;
+    //         border-radius: 150%;
+    //         left: 50%;
+    //         transform: translate(-50%);
+    //         position: absolute;
+    // }
+
+    // .products-ice-cream-circle::before {
+    //         content: "";
+    //         width: 100%;
+    //         height: 100%;
+    //         background-image: url(/src/images/mobile-png/ellipse-mob-1x.png);
+    //         position: absolute;
+    //         bottom: 17px;
+    //         left: 0;
+    //         border-radius: 150%;
+    // }
+
+    .products-ice-coffee {
+        position: relative;
+        font-family: 'Montserrat';
+        margin-top: 123px;
+        margin-bottom: 40px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #131313;
+    }
+
+    // .products-ice-coffee::before {
+    //     content: url(/src/images/tablet-png/pariwat-pannium-t-1x.png);
+    //     position: absolute;
+    //     width: 100%;
+    //     height: 199.68px;
+    //     left: 0px;
+    //     top: 0px;
+    //     border-radius: 100.166px;
+    //     object-fit: contain;
+    //     transform: translateY(-230);
+
+    // @mixin сentering-x() {
+    //     position: absolute;
+    //     left: 50%;
+    //     transform: translateX(-50%);
+    // }
+    // }
+
+    .products-milkshakes {
+        position: relative;
+        font-family: 'Montserrat';
+        margin-top: 123px;
+        margin-bottom: 40px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #131313;
+
+        &:last-child {
+            margin-top: 105.64px;
+            margin-bottom: 34.36;
+        }
+    }
+
+    // .products-milkshakes::before {
+    //     content: url(/src/images/tablet-png/victor-rutka-t-1x.png);
+    //     position: absolute;
+    //     width: 100%;
+    //     height: 199.68px;
+    //     left: 0px;
+    //     top: 0px;
+    //     border-radius: 100.166px;
+    //     object-fit: contain;
+    //     transform: translateY(-230);
+
+    // @mixin сentering-x() {
+    //     position: absolute;
+    //     left: 50%;
+    //     transform: translateX(-50%);
+    // }
+    // }
+
+    .product-description {
+        font-family: 'Montserrat';
+        // width: 100%;
+        // height: 124px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 176%;
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 110px;
+        padding-right: 40px;
+        padding-left: 40px;
+        color: #131313;
+
+        &:last-child {
+            width: 100%;
+            height: 132.27px;
+        }
+    }
+
+    .btn-open {
+        position: absolute;
+        width: 40px;
+        height: 0px;
+        border: none;
+        background: none;
+        bottom: 0;
+    }
+
+    .btn-open::before {
+        content: "";
+        display: block;
+        width: 50%;
+        height: 50%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        mask-image: url(/src/images/sprite.svg#icon-frame-53);
+        mask-position: center;
+        mask-repeat: no-repeat;
+        mask-size: contain;
+    }
+
+    .open-icon {
+        position: absolute;
+        width: 40px;
+        height: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+
+        &:hover {
+            width: 50px;
+            top: 92px;
+        }
+
+        &:focus {
+            width: 50px;
+            top: 148px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .products-owerlay {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background: #F5F5F5;
+        background-image: url(/src/images/tablet-png/background-customer-t-1x.png);
+    }
+
+    .products-text {
+        font-family: 'Montserrat';
+        padding-top: 61px;
+        padding-bottom: 12px;
+        font-weight: 800;
+        font-size: 22px;
+        line-height: 1.22;
+        text-align: center;
+        text-transform: uppercase;
+        color: #131313;
+    }
+
+    .products-title {
+        font-family: 'Seymour One';
+        padding-bottom: 200px;
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 1.26;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #131313;
+    }
+
+    .products {
+        gap: 16px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        flex-basis: calc((100% - 95px) /3);
+    }
+
+    .card-set {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .products-item {
+        width: 224px;
+        left: 20px;
+        top: 782px;
+        background: #AEC6A5;
+        margin-bottom: 164px;
+        box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+        border-radius: 15.7808px;
+        margin-bottom: 66px;
+
+        &:last-child {
+            margin-bottom: 60px;
+        }
+
+        &:nth-last-child(2) {
+            background: #EFD478;
+            border-radius: 24px;
+        }
+
+        &:last-child {
+            background: #D6936D;
+            border-radius: 24px;
+        }
+    }
+}
+
+.products-ice-cream,
+.products-ice-coffee,
+.products-milkshakes {
+    position: relative;
+    font-family: 'Montserrat';
+    margin-top: 123px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.22;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #131313;
+}
+
+.products-ice-cream::before {
+    content: url(/src/images/tablet-png/kelsey-curtis-t-1x.png);
+    position: absolute;
+    width: 100%;
+    height: 199.68px;
+    left: 0px;
+    top: 0px;
+    border-radius: 100.166px;
+    object-fit: contain;
+    transform: translateY(-250);
+
+    @mixin сentering-x() {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.products-ice-coffee::before {
+    content: url(/src/images/tablet-png/pariwat-pannium-t-1x.png);
+    position: absolute;
+    width: 100%;
+    height: 199.68px;
+    left: 0px;
+    top: 0px;
+    border-radius: 100.166px;
+    object-fit: contain;
+    transform: translateY(-250);
+
+    @mixin сentering-x() {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.products-milkshakes::before {
+    content: url(/src/images/tablet-png/victor-rutka-t-1x.png);
+    position: absolute;
+    width: 100%;
+    height: 199.68px;
+    left: 0px;
+    top: 0px;
+    border-radius: 100.166px;
+    object-fit: contain;
+    transform: translateY(-250);
+
+    @mixin сentering-x() {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.product-description {
+    font-family: 'Montserrat';
+    width: 100%;
+    height: 143.93px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 176%;
+    text-align: center;
+    padding-left: 26px;
+    padding-right: 26px;
+    color: #131313;
+
+    &:last-child {
+        width: 100%;
+        height: 132.27px;
+    }
+
+    .btn-open {
+        position: absolute;
+        width: 40px;
+        height: 0px;
+        border: none;
+        background: none;
+        bottom: 0;
+    }
+
+    .btn-open::before {
+        content: "";
+        display: block;
+        width: 50%;
+        height: 50%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        mask-image: url(/src/images/sprite.svg#icon-frame-53);
+        mask-position: center;
+        mask-repeat: no-repeat;
+        mask-size: contain;
+    }
+
+    .open-icon {
+        position: absolute;
+        width: 40px;
+        height: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+
+        &:hover {
+            width: 50px;
+            top: 92px;
+        }
+
+        &:focus {
+            width: 50px;
+            top: 148px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .products-owerlay {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background: #F5F5F5;
+        background-image: url(/src/images/desktop-png/background-customer-d-1x.png);
+    }
+
+    .products-text {
+        font-family: 'Montserrat';
+        padding-top: 61px;
+        padding-bottom: 12px;
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 1.23;
+        text-align: center;
+        text-transform: uppercase;
+        color: #131313;
+    }
+
+    .products-title {
+        font-family: 'Seymour One';
+        padding-bottom: 303.29px;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 1.25;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #131313;
+    }
+
+    .products {
+        gap: 16px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        flex-basis: calc((100% - 95px) /3);
+    }
+
+    .card-set {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .products-item {
+        width: 370.16px;
+        height: 535.51px;
+        left: 12.07px;
+        top: 1121.44px;
+        background: #AEC6A5;
+        margin-bottom: 164px;
+        box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+        border-radius: 15.7808px;
+        margin-bottom: 66px;
+
+        &:last-child {
+            margin-bottom: 60px;
+        }
+
+        &:nth-last-child(2) {
+            background: #EFD478;
+            border-radius: 24px;
+        }
+
+        &:last-child {
+            background: #D6936D;
+            border-radius: 24px;
+        }
+    }
+
+    .products-ice-cream,
+    .products-ice-coffee,
+    .products-milkshakes {
+        position: relative;
+        font-family: 'Montserrat';
+        margin-top: 123px;
+        margin-bottom: 40px;
+        padding-top: 49.05px;
+        // padding-bottom: 65.06px;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 1.23;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #131313;
+    }
+
+    .products-ice-cream::before {
+        content: url(/src/images/desktop-png/kelsey-curtis-d-1x.png);
+        position: absolute;
+        width: 100%;
+        height: 199.68px;
+        left: 0px;
+        top: 0px;
+        border-radius: 100.166px;
+        object-fit: contain;
+        transform: translateY(-320);
+
+        @mixin сentering-x() {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .products-ice-coffee::before {
+        content: url(/src/images/desktop-png/pariwat-pannium-d-1x.png);
+        width: 100%;
+        height: 199.68px;
+        left: 0px;
+        top: 0px;
+        border-radius: 100.166px;
+        object-fit: contain;
+        transform: translateY(-320);
+
+        @mixin сentering-x() {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .products-milkshakes::before {
+        content: url(/src/images/desktop-png/victor-rutka-d-1x.png);
+        position: absolute;
+        width: 100%;
+        height: 199.68px;
+        left: 0px;
+        top: 0px;
+        border-radius: 100.166px;
+        object-fit: contain;
+        transform: translateY(-320);
+
+        @mixin сentering-x() {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .product-description {
+        font-family: 'Montserrat';
+        width: 100%;
+        height: 147px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 176%;
+        text-align: center;
+        padding-left: 63px;
+        padding-right: 63px;
+        color: #131313;
+
+        &:last-child {
+            width: 100%;
+            height: 132.27px;
+        }
+    }
+
+    .btn-open {
+        position: absolute;
+        // width: 40px;
+        height: 0px;
+        border: none;
+        background: none;
+        bottom: 0;
+    }
+
+    .btn-open::before {
+        content: "";
+        display: block;
+        width: 50%;
+        height: 50%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        mask-image: url(/src/images/sprite.svg#icon-frame-53);
+        mask-position: center;
+        mask-repeat: no-repeat;
+        mask-size: contain;
+    }
+
+    .open-icon {
+        position: absolute;
+        width: 40px;
+        height: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+
+        &:hover {
+            width: 50px;
+            top: 92px;
+        }
+
+        &:focus {
+            width: 50px;
+            top: 148px;
+        }
+    }
+}
