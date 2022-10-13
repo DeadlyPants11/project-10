@@ -2,7 +2,7 @@
   const refs = {
     openModalBtn: document.querySelector('[modal-french-open]'),
     closeModalBtn: document.querySelector('[modal-french-close]'),
-    modal: document.querySelector('[data-modal]'),
+    modal: document.querySelector('[data-modal-french]'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
