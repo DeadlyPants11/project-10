@@ -2,7 +2,7 @@
   const refs = {
     openModalBtn: document.querySelector('[modal-video-open]'),
     closeModalBtn: document.querySelector('[modal-video-close]'),
-    modal: document.querySelector('[data-modal]'),
+    modal: document.querySelector('[data-modal-video]'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
