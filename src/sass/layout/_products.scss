@@ -39,7 +39,7 @@
     }
 
     .products {
-        gap: 40px;
+        column-gap: 40px;
         display: flex;
         justify-content: center;
         text-align: center;
@@ -200,7 +200,6 @@
 
     .product-description {
         font-family: 'Montserrat';
-        // width: 100%;
         font-weight: 400;
         font-size: 14px;
         line-height: 176%;
@@ -217,33 +216,29 @@
     }
 
     .btn-open {
-        position: absolute;
-        width: 40px;
-        height: 0px;
+        cursor: url(../images/cursor.png), auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 40px;
         border: none;
         background: none;
-        bottom: 20px;
-        left: 50%;
-        transform: translate(-50%);
+    }
+
+    .btn-open:hover .open-icon{
+        width: 50px;
+    }
+
+    .btn-open:focus .open-icon{
+        width: 60px;
     }
 
     .open-icon {
-        position: absolute;
         width: 40px;
-        height: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 20px;
-        &:hover {
-            width: 50px;
-            top: 92px;
+        height: 50px;
+    
         }
-
-        &:focus {
-            width: 50px;
-            top: 148px;
-        }
-    }
 }
 
 @media screen and (min-width: 768px) {
@@ -295,7 +290,7 @@
     .card-set {
         display: flex;
         flex-wrap: wrap;
-        gap: 40px;
+        gap: 16px;
     }
 
     .products-item {
@@ -429,9 +424,10 @@
 }
 
   .btn-open {
+    cursor: url(../images/cursor.png), auto;
       position: absolute;
       width: 40px;
-      height: 0px;
+      height: 40px;
       border: none;
       background: none;
       bottom: 20px;
@@ -439,24 +435,19 @@
       transform: translate(-50%);
   }
 
-  .open-icon {
-      position: absolute;
-      width: 40px;
-      height: 10px;
-      left: 50%;
-      transform: translateX(-50%);
-      bottom: 0;
+    .btn-open:hover .open-icon{
+        width: 50px;
+    }
 
-      &:hover {
-          width: 50px;
-          top: 92px;
-      }
+    .btn-open:focus .open-icon{
+        width: 60px;
+    }
 
-      &:focus {
-          width: 50px;
-          top: 148px;
-      }
-  }
+   .open-icon {
+       width: 40px;
+       height: 50px;
+   }
+  
 
 @media screen and (min-width: 1200px) {
     .products-owerlay {
@@ -543,7 +534,6 @@
         margin-top: 123px;
         margin-bottom: 40px;
         padding-top: 49.05px;
-        // padding-bottom: 65.06px;
         font-weight: 700;
         font-size: 30px;
         line-height: 1.23;
@@ -650,9 +640,7 @@
         width: 100px;
         height: 40px;
         border: none;
-     
         background: none;
-        bottom: 20px;
     }
 
     .btn-open:hover .open-icon{
@@ -660,17 +648,12 @@
     }
 
     .btn-open:focus .open-icon{
-        width: 50px;
-
+        width: 60px;
     }
 
     .open-icon {
-        
         width: 40px;
         height: 50px;
-      
-        
-   
     }
 
 }
