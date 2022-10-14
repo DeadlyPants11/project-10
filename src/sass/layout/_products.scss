@@ -41,7 +41,6 @@
     .products {
         gap: 40px;
         display: flex;
-        flex-direction: column;
         justify-content: center;
         text-align: center;
         flex-direction: row;
@@ -58,6 +57,7 @@
     }
 
     .products-item {
+        position: relative;
         width: 320px;
         left: 20px;
         top: 782px;
@@ -95,55 +95,46 @@
         color: #131313;
     }
 
-    .products-ice-cream::before {
-        content: url(/src/images/tablet-png/kelsey-curtis-t-1x.png);
-        position: absolute;
-        width: 100%;
-        height: 199.68px;
-        left: 0px;
-        top: 0px;
-        border-radius: 100.166px;
-        object-fit: contain;
-        transform: translateY(-350);
-
-    @mixin сentering-x() {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    }
-
-    // .circle {
+    // .products-ice-cream::before {
+    //     content: url(/src/images/tablet-png/kelsey-curtis-t-1x.png);
     //     position: absolute;
-    //         top: 50px;
-    //         border-radius: 50%/50%;
-    //         padding-bottom: 7px;
-    //         background-color: rgba(156, 190, 143, 0.7);
-    //         box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
-    //         z-index: 2;
-    //         transform: translate(0%, -180%);
+    //     width: 100%;
+    //     height: 199.68px;
+    //     left: 0px;
+    //     top: 0px;
+    //     border-radius: 100.166px;
+    //     object-fit: contain;
+    //     transform: translateY(-350);
+
+    // @mixin сentering-x() {
+    //     position: absolute;
+    //     left: 50%;
+    //     transform: translateX(-50%);
+    // }
     // }
 
-    // .products-ice-cream-circle {
-    //         background-color: #AEC6A5;
-    //         width: 200px;
-    //         height: 200px;
-    //         border-radius: 150%;
-    //         left: 50%;
-    //         transform: translate(-50%);
-    //         position: absolute;
-    // }
+    .products-ice-cream-circle {
+        top: -30%;
+            background-color: black;
+            width: 200px;
+            height: 200px;
+            border-radius: 150%;
+            left: 50%;
+            transform: translate(-50%);
+            position: absolute;
+    }
 
-    // .products-ice-cream-circle::before {
-    //         content: "";
-    //         width: 100%;
-    //         height: 100%;
-    //         background-image: url(/src/images/mobile-png/ellipse-mob-1x.png);
-    //         position: absolute;
-    //         bottom: 17px;
-    //         left: 0;
-    //         border-radius: 150%;
-    // }
+    .products-ice-cream-circle::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-image: url(/src/images/tablet-png/plate-ice-cream-t-1x.png);
+            position: absolute;
+            bottom: 17px;
+            left: 50%;
+            transform: translate(-50%);
+            border-radius: 150%;
+    }
 
     .products-ice-coffee {
         position: relative;
@@ -218,9 +209,6 @@
         font-family: 'Montserrat';
         // width: 100%;
         // height: 124px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         font-weight: 400;
         font-size: 14px;
         line-height: 176%;
@@ -432,9 +420,6 @@
     font-family: 'Montserrat';
     width: 100%;
     height: 143.93px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-weight: 400;
     font-size: 14px;
     line-height: 176%;
@@ -703,3 +688,14 @@
         }
     }
 }
+
+        // .circle {
+        //     position: absolute;
+        //         top: 50px;
+        //         border-radius: 50%/50%;
+        //         padding-bottom: 7px;
+        //         background-color: rgba(156, 190, 143, 0.7);
+        //         box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+        //         z-index: 2;
+        //         transform: translate(0%, -180%);
+        // }
