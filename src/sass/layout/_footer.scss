@@ -20,7 +20,7 @@
   @include font-mobile(34px, 700, 41px);
   text-transform: uppercase;
   color: var(--color-primary-text);
-  margin-bottom: 42px;
+  padding-bottom: 42px;
   width: 200px;
 }
 
@@ -98,7 +98,7 @@
   }
 
   .footer-headline-wrapper {
-    margin-top: 40px;
+    padding-top: 40px;
   }
 
   .footer-headline-wrapper_beginning {
@@ -112,13 +112,13 @@
     @include font-tablet(48px, 700, 59px);
     letter-spacing: 0.06em;
     width: 340px;
-    margin-bottom: 32px;
+    padding-bottom: 32px;
   }
 
   .social-tel-wrapper {
     display: flex;
     flex-direction: column;
-    margin-top: 108px;
+    padding-top: 108px;
   }
 
   .social-list {
@@ -153,7 +153,7 @@
 
 @media screen and (min-width: 1200px) {
   .footer-headline-wrapper {
-    margin-top: 120px;
+    padding-top: 120px;
   }
 
   .footer-headline-wrapper_beginning {
@@ -165,11 +165,11 @@
   .footer-headline-wrapper_ending {
     @include font-desktop(58px, 700, 71px);
     width: 500px;
-    margin-bottom: 54px;
+    padding-bottom: 99px;
   }
 
   .social-tel-wrapper {
-    margin-top: 132px;
+    padding-top: 132px;
   }
 
   .social-list {
