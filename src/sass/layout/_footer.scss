@@ -31,6 +31,11 @@
   margin-bottom: 38px;
 }
 
+.social-list__item{
+  width: 35px;
+  height: 35px;
+}
+
 .social-list__link {
   display: flex;
   justify-content: center;
@@ -40,6 +45,11 @@
   border-radius: 50%;
   background-color: var(--color-btn-default);
   cursor: url(../images/cursor.png), auto;
+
+  &:hover {
+      width: 32px;
+      height: 32px;
+    }
 
   &:focus {
     width: 35px;
