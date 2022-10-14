@@ -2,8 +2,7 @@
   .modal-buy-now {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
-    height: 100%;   
+    transform: translateX(-50%);  
     padding: 28px;
     background-color: var(--color-primary-text);
     border-color:  var(--color-btn-default);
@@ -59,6 +58,7 @@
 }
 
 .modal-buy-now__picture {
+    width: 132px;
     position: absolute;
     top: 50px;
     border-radius: 50%/50%;
@@ -103,6 +103,7 @@
 }
 
 .modal-buy-now__picture-list {
+    width: 132px;
     position: absolute;
     top: 50px;
     border-radius: 50%/50%;
@@ -129,6 +130,7 @@
 }
 
 .modal-buy-now__picture-item {
+    width: 132px;
     position: absolute;
     top: 50px;
     border-radius: 50%/50%;
@@ -158,6 +160,10 @@
     margin-bottom: 16px;
     color: var(--color-secondary-text);
     background-color: rgba(248, 210, 78, 0.1);
+ 
+&::placeholder {
+  color: var(--color-secondary-text) ;
+ }
 }
 
 .modal-buy-now__message {
@@ -171,12 +177,17 @@
     margin-right: auto;  
     resize: none;
     background-color: rgba(248, 210, 78, 0.1);
+
+&::placeholder {
+  color: var(--color-secondary-text) ;
+ }
 }
 
 .modal-buy-now__submit {
-    font-size: 14px;
+    width: 114px;
+    font-size: 12px;
     font-weight: 600;
-    line-height: 1.214;
+    line-height: 1.25;
     border: none;
     padding: 12px;
     padding-left: 34px;
@@ -188,13 +199,13 @@
  }
 }
 
-@media screen and (min-width: 768px) {
+/*@media screen and (min-width: 768px) {
     .modal-buy-now {
         display: none;
     }
-}
+}*/
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
     .modal-buy-now {
         display: block;
         position: absolute;
@@ -255,6 +266,7 @@
 }
 
 .modal-buy-now__picture {
+    width: 132px;
     position: absolute;
     top: 50px;
     border-radius: 50%/50%;
@@ -299,6 +311,7 @@
 }
 
 .modal-buy-now__picture-list {
+    width: 132px;
     position: absolute;
     top: 50px;
     border-radius: 50%/50%;
@@ -325,6 +338,7 @@
 }
 
 .modal-buy-now__picture-item {
+    width: 132px;
     position: absolute;
     top: 50px;
     border-radius: 50%/50%;
@@ -355,11 +369,18 @@
     margin-bottom: 16px;
     color: var(--color-secondary-text);
     background-color: rgba(248, 210, 78, 0.1);
+
+&::placeholder {
+  color: var(--color-secondary-text) ;
+ }
 }
 
 .modal-buy-now__message {
     width: 368px;
     height: 84px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
     border-radius: 10px;
     border: 2px solid #96AF8C;
     padding-top: 11px;
@@ -368,6 +389,10 @@
     margin-right: auto;  
     resize: none;
     background-color: rgba(248, 210, 78, 0.1);
+
+&::placeholder {
+  color: var(--color-secondary-text) ;
+ }
 }
 
 .modal-buy-now__submit {
