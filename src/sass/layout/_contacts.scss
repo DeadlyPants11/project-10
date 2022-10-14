@@ -150,6 +150,8 @@
 }
 .contacts__cards {
     margin-top: -385px;
+    z-index: 100;
+    position: relative;
 }
 @media screen and (min-width: 768px) {
     .contacts__cards{

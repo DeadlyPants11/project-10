@@ -12,7 +12,7 @@
     screen and (min-resolution: 2dppx) and (max-width: 767px) {
         .customer-reviews {
             background-image: url('../images/mobile-png/background-customer-m-@2x.png');
-            height: 940px;
+            height: 1050px;
         }
     }
 }
@@ -23,7 +23,7 @@
         background-color: #F5F5F5;
         background-image: url('../images/tablet-png/background-customer-t-1x.png');
         min-width: 768px;
-        height: 958px;
+        height: 1050px;
     }
 
     @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
