@@ -1,10 +1,59 @@
-.customer-reviews {
-    
-    background: #FCFCFC
+@media screen and (max-width: 767px) {
+    .customer-reviews {
+        height: 1050px;
+        padding-top: 186px;
+        background-color: #F5F5F5;
+        background-image: url('../images/mobile-png/background-customer-m-1x.png');
+        width: 100%;
+    }
+
+    @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+    screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+        .customer-reviews {
+            background-image: url('../images/mobile-png/background-customer-m-@2x.png');
+            height: 940px;
+        }
+    }
 }
-.customer-reviews__ container {
+
+@media screen and (min-width: 768px) {
+    .customer-reviews {
+        padding-top: 60px;
+        background-color: #F5F5F5;
+        background-image: url('../images/tablet-png/background-customer-t-1x.png');
+        min-width: 768px;
+        height: 958px;
+    }
+
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+        .customer-reviews {
+            background-image: url('../images/tablet-png/background-customer-t-@2x.png');
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .customer-reviews {
+        padding-top: 128px;
+        background-image: url('../images/desktop-png/background-customer-d-1x.png');
+        min-width: 1200px;
+        height: 1020px;
+    }
+
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+        .customer-reviews {
+            background-image: url('../images/desktop-png/background-customer-d-@2x.png');
+        }
+    }
+}
+
+.customer-reviews__container {
     position: relative;
-    
 }
 
 .middle {
@@ -25,13 +74,12 @@
     height: 12px;
     margin: 9px;
     cursor: url('../images/cursor.png'), auto;
-    background-color:var(--color-btn-slider);
+    background-color: var(--color-btn-slider);
     border-radius: 45%;
-    
 
     &:hover,
     &:focus {
-        background-color:var(--color-background);
+        background-color: var(--color-background);
     }
 }
 
@@ -81,6 +129,7 @@ input[name="r"] {
     width: 100%;
     height: 100%;
 }
+
 .slider__review {
     display: flex;
     text-align: center;
@@ -102,26 +151,26 @@ input[name="r"] {
 
 @media screen and (max-width: 767px) {
     .customer-reviews__container {
-        height: 775px;    
+        height: 775px;
     }
-    
+
     .slider__img {
         margin-bottom: 32px;
     }
-    
-    .slider__review {    
+
+    .slider__review {
         font-weight: 400;
         font-size: 12px;
-        line-height: 255%; 
+        line-height: 255%;
         width: 280px;
-        height: 256px;      
+        height: 256px;
         padding-left: 39px;
         padding-right: 39px;
         margin-bottom: 30px;
     }
 
     .slider__customer {
-        font-size: 20px;       
+        font-size: 20px;
     }
 
     .navigation {
@@ -129,8 +178,10 @@ input[name="r"] {
     }
 }
 
-
- @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+    .customer-reviews {
+            padding-top: 223px;
+        }
     .customer-reviews__container {
         height: 650px;
     }
@@ -145,7 +196,7 @@ input[name="r"] {
         line-height: 186%;
         width: 705px;
         height: 138;
-        padding-left:80px;
+        padding-left: 80px;
         padding-right: 80px;
         margin-bottom: 32px;
     }
@@ -160,14 +211,17 @@ input[name="r"] {
 }
 
 @media screen and (min-width: 1200px) {
+    .customer-reviews {
+        padding-top: 452px;
+    }
     .customer-reviews__container {
         height: 485px;
     }
-    
+
     .slider__img {
         margin-bottom: 32px;
     }
-    
+
     .slider__review {
         font-size: 16px;
         line-height: 186%;
@@ -177,8 +231,9 @@ input[name="r"] {
         padding-right: 74px;
         margin-bottom: 32px;
     }
-        
+
     .navigation {
         top: 345px;
     }
-} 
+}
+
