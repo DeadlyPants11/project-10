@@ -1,0 +1,2 @@
+!function(){for(var o={openModalBtn:document.querySelectorAll("[modal-buy-now-open]"),closeModalBtn:document.querySelector("[modal-buy-now-close]"),modal:document.querySelector("[data-modal-buy-now]")},e=0;e<o.openModalBtn.length;++e)o.openModalBtn[e].addEventListener("click",n);function n(){o.modal.classList.toggle("is-hidden")}o.closeModalBtn.addEventListener("click",n)}();
+//# sourceMappingURL=index.9626eacf.js.map
