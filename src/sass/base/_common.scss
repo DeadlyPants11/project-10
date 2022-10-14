@@ -15,6 +15,10 @@ ul {
   list-style-type: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--color-background);
   font-family: 'Montserrat', sans-serif;
