@@ -95,23 +95,23 @@
         color: #131313;
     }
 
-    // .products-ice-cream::before {
-    //     content: url(/src/images/tablet-png/kelsey-curtis-t-1x.png);
-    //     position: absolute;
-    //     width: 100%;
-    //     height: 199.68px;
-    //     left: 0px;
-    //     top: 0px;
-    //     border-radius: 100.166px;
-    //     object-fit: contain;
-    //     transform: translateY(-350);
+    .products-ice-cream::before {
+        content: url(/src/images/tablet-png/kelsey-curtis-t-1x.png);
+        position: absolute;
+        width: 100%;
+        height: 199.68px;
+        left: 0px;
+        top: 0px;
+        border-radius: 100.166px;
+        object-fit: contain;
+        transform: translateY(-350);
 
-    // @mixin сentering-x() {
-    //     position: absolute;
-    //     left: 50%;
-    //     transform: translateX(-50%);
-    // }
-    // }
+    @mixin сentering-x() {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    }
 
     // .circle {
     //     position: absolute;
@@ -159,23 +159,23 @@
         color: #131313;
     }
 
-    // .products-ice-coffee::before {
-    //     content: url(/src/images/tablet-png/pariwat-pannium-t-1x.png);
-    //     position: absolute;
-    //     width: 100%;
-    //     height: 199.68px;
-    //     left: 0px;
-    //     top: 0px;
-    //     border-radius: 100.166px;
-    //     object-fit: contain;
-    //     transform: translateY(-230);
+    .products-ice-coffee::before {
+        content: url(/src/images/tablet-png/pariwat-pannium-t-1x.png);
+        position: absolute;
+        width: 100%;
+        height: 199.68px;
+        left: 0px;
+        top: 0px;
+        border-radius: 100.166px;
+        object-fit: contain;
+        transform: translateY(-230);
 
-    // @mixin сentering-x() {
-    //     position: absolute;
-    //     left: 50%;
-    //     transform: translateX(-50%);
-    // }
-    // }
+    @mixin сentering-x() {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    }
 
     .products-milkshakes {
         position: relative;
@@ -196,23 +196,23 @@
         }
     }
 
-    // .products-milkshakes::before {
-    //     content: url(/src/images/tablet-png/victor-rutka-t-1x.png);
-    //     position: absolute;
-    //     width: 100%;
-    //     height: 199.68px;
-    //     left: 0px;
-    //     top: 0px;
-    //     border-radius: 100.166px;
-    //     object-fit: contain;
-    //     transform: translateY(-230);
+    .products-milkshakes::before {
+        content: url(/src/images/tablet-png/victor-rutka-t-1x.png);
+        position: absolute;
+        width: 100%;
+        height: 199.68px;
+        left: 0px;
+        top: 0px;
+        border-radius: 100.166px;
+        object-fit: contain;
+        transform: translateY(-230);
 
-    // @mixin сentering-x() {
-    //     position: absolute;
-    //     left: 50%;
-    //     transform: translateX(-50%);
-    // }
-    // }
+    @mixin сentering-x() {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    }
 
     .product-description {
         font-family: 'Montserrat';
