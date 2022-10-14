@@ -6,13 +6,13 @@
 
 @media screen and (max-width: 767px) {
 
-    .products-owerlay {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        background: #F5F5F5;
-        background-image: url(/src/images/mobile-png/background-customer-m-1x.png);
-    }
+.products-owerlay {
+    width: 100%;
+     margin-left: auto;
+    margin-right: auto;
+    background: #F5F5F5;
+    background-image: url(/src/images/mobile-png/background-customer-m-1x.png);
+}
 
     .products-text {
         font-family: 'Montserrat';
@@ -59,8 +59,6 @@
     .products-item {
         position: relative;
         width: 320px;
-        left: 20px;
-        top: 782px;
         background: #AEC6A5;
         border-radius: 24px;
         margin-bottom: 164px;
@@ -95,27 +93,10 @@
         color: #131313;
     }
 
-    // .products-ice-cream::before {
-    //     content: url(/src/images/tablet-png/kelsey-curtis-t-1x.png);
-    //     position: absolute;
-    //     width: 100%;
-    //     height: 199.68px;
-    //     left: 0px;
-    //     top: 0px;
-    //     border-radius: 100.166px;
-    //     object-fit: contain;
-    //     transform: translateY(-350);
-
-    // @mixin сentering-x() {
-    //     position: absolute;
-    //     left: 50%;
-    //     transform: translateX(-50%);
-    // }
-    // }
-
     .products-ice-cream-circle {
-        top: -30%;
-            background-color: black;
+        top: -25%;
+        background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+            box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
             width: 200px;
             height: 200px;
             border-radius: 150%;
@@ -128,7 +109,7 @@
             content: "";
             width: 100%;
             height: 100%;
-            background-image: url(/src/images/tablet-png/plate-ice-cream-t-1x.png);
+            background-image: url(/src/images/tablet-png/kelsey-curtis-t-1x.png);
             position: absolute;
             bottom: 17px;
             left: 50%;
@@ -150,23 +131,29 @@
         color: #131313;
     }
 
-    .products-ice-coffee::before {
-        content: url(/src/images/tablet-png/pariwat-pannium-t-1x.png);
-        position: absolute;
-        width: 100%;
-        height: 199.68px;
-        left: 0px;
-        top: 0px;
-        border-radius: 100.166px;
-        object-fit: contain;
-        transform: translateY(-230);
-
-    @mixin сentering-x() {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    }
+        .products-ice-coffee-circle {
+            top: -25%;
+            background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+            box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+            width: 200px;
+            height: 200px;
+            border-radius: 150%;
+            left: 50%;
+            transform: translate(-50%);
+            position: absolute;
+        }
+    
+        .products-ice-coffee-circle::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-image: url(/src/images/tablet-png/pariwat-pannium-t-1x.png);
+            position: absolute;
+            bottom: 17px;
+            left: 50%;
+            transform: translate(-50%);
+            border-radius: 150%;
+        }
 
     .products-milkshakes {
         position: relative;
@@ -187,28 +174,33 @@
         }
     }
 
-    .products-milkshakes::before {
-        content: url(/src/images/tablet-png/victor-rutka-t-1x.png);
-        position: absolute;
-        width: 100%;
-        height: 199.68px;
-        left: 0px;
-        top: 0px;
-        border-radius: 100.166px;
-        object-fit: contain;
-        transform: translateY(-230);
-
-    @mixin сentering-x() {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    }
+         .products-milkshakes-circle {
+             top: -25%;
+            background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+            box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+             width: 200px;
+             height: 200px;
+             border-radius: 150%;
+             left: 50%;
+             transform: translate(-50%);
+             position: absolute;
+         }
+    
+         .products-milkshakes-circle::before {
+             content: "";
+             width: 100%;
+             height: 100%;
+             background-image: url(/src/images/tablet-png/victor-rutka-t-1x.png);
+             position: absolute;
+             bottom: 17px;
+             left: 50%;
+             transform: translate(-50%);
+             border-radius: 150%;
+         }
 
     .product-description {
         font-family: 'Montserrat';
         // width: 100%;
-        // height: 124px;
         font-weight: 400;
         font-size: 14px;
         line-height: 176%;
@@ -218,7 +210,6 @@
         padding-right: 40px;
         padding-left: 40px;
         color: #131313;
-
         &:last-child {
             width: 100%;
             height: 132.27px;
@@ -231,21 +222,9 @@
         height: 0px;
         border: none;
         background: none;
-        bottom: 0;
-    }
-
-    .btn-open::before {
-        content: "";
-        display: block;
-        width: 50%;
-        height: 50%;
-        position: absolute;
+        bottom: 20px;
         left: 50%;
-        top: 50%;
-        mask-image: url(/src/images/sprite.svg#icon-frame-53);
-        mask-position: center;
-        mask-repeat: no-repeat;
-        mask-size: contain;
+        transform: translate(-50%);
     }
 
     .open-icon {
@@ -254,8 +233,7 @@
         height: 10px;
         left: 50%;
         transform: translateX(-50%);
-        bottom: 0;
-
+        bottom: 20px;
         &:hover {
             width: 50px;
             top: 92px;
@@ -321,9 +299,9 @@
     }
 
     .products-item {
+        position: relative;
         width: 224px;
-        left: 20px;
-        top: 782px;
+        height: 428px;
         background: #AEC6A5;
         margin-bottom: 164px;
         box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
@@ -362,64 +340,80 @@
     color: #131313;
 }
 
-.products-ice-cream::before {
-    content: url(/src/images/tablet-png/kelsey-curtis-t-1x.png);
+.products-ice-cream-circle {
+    top: -25%;
+    background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+    width: 200px;
+    height: 200px;
+    border-radius: 150%;
+    left: 50%;
+    transform: translate(-50%);
     position: absolute;
+}
+    
+.products-ice-cream-circle::before {
+    content: "";
     width: 100%;
-    height: 199.68px;
-    left: 0px;
-    top: 0px;
-    border-radius: 100.166px;
-    object-fit: contain;
-    transform: translateY(-250);
-
-    @mixin сentering-x() {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-    }
+    height: 100%;
+    background-image: url(/src/images/tablet-png/kelsey-curtis-t-1x.png);
+    position: absolute;
+    bottom: 17px;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 150%;
 }
 
-.products-ice-coffee::before {
-    content: url(/src/images/tablet-png/pariwat-pannium-t-1x.png);
+.products-ice-coffee-circle {
+    top: -25%;
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+    width: 200px;
+    height: 200px;
+    border-radius: 150%;
+    left: 50%;
+    transform: translate(-50%);
     position: absolute;
-    width: 100%;
-    height: 199.68px;
-    left: 0px;
-    top: 0px;
-    border-radius: 100.166px;
-    object-fit: contain;
-    transform: translateY(-250);
-
-    @mixin сentering-x() {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-    }
 }
 
-.products-milkshakes::before {
-    content: url(/src/images/tablet-png/victor-rutka-t-1x.png);
-    position: absolute;
+.products-ice-coffee-circle::before {
+    content: "";
     width: 100%;
-    height: 199.68px;
-    left: 0px;
-    top: 0px;
-    border-radius: 100.166px;
-    object-fit: contain;
-    transform: translateY(-250);
+    height: 100%;
+    background-image: url(/src/images/tablet-png/pariwat-pannium-t-1x.png);
+    position: absolute;
+    bottom: 17px;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 150%;
+}
 
-    @mixin сentering-x() {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-    }
+.products-milkshakes-circle {
+    top: -25%;
+    background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);    width: 200px;
+    height: 200px;
+    border-radius: 150%;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+}
+
+.products-milkshakes-circle::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url(/src/images/tablet-png/victor-rutka-t-1x.png);
+    position: absolute;
+    bottom: 17px;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 150%;
 }
 
 .product-description {
     font-family: 'Montserrat';
     width: 100%;
-    height: 143.93px;
     font-weight: 400;
     font-size: 14px;
     line-height: 176%;
@@ -432,49 +426,37 @@
         width: 100%;
         height: 132.27px;
     }
-
-    .btn-open {
-        position: absolute;
-        width: 40px;
-        height: 0px;
-        border: none;
-        background: none;
-        bottom: 0;
-    }
-
-    .btn-open::before {
-        content: "";
-        display: block;
-        width: 50%;
-        height: 50%;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        mask-image: url(/src/images/sprite.svg#icon-frame-53);
-        mask-position: center;
-        mask-repeat: no-repeat;
-        mask-size: contain;
-    }
-
-    .open-icon {
-        position: absolute;
-        width: 40px;
-        height: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 0;
-
-        &:hover {
-            width: 50px;
-            top: 92px;
-        }
-
-        &:focus {
-            width: 50px;
-            top: 148px;
-        }
-    }
 }
+
+  .btn-open {
+      position: absolute;
+      width: 40px;
+      height: 0px;
+      border: none;
+      background: none;
+      bottom: 20px;
+      left: 50%;
+      transform: translate(-50%);
+  }
+
+  .open-icon {
+      position: absolute;
+      width: 40px;
+      height: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+
+      &:hover {
+          width: 50px;
+          top: 92px;
+      }
+
+      &:focus {
+          width: 50px;
+          top: 148px;
+      }
+  }
 
 @media screen and (min-width: 1200px) {
     .products-owerlay {
@@ -529,10 +511,9 @@
     }
 
     .products-item {
+        position: relative;
         width: 370.16px;
         height: 535.51px;
-        left: 12.07px;
-        top: 1121.44px;
         background: #AEC6A5;
         margin-bottom: 164px;
         box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
@@ -572,63 +553,79 @@
         color: #131313;
     }
 
-    .products-ice-cream::before {
-        content: url(/src/images/desktop-png/kelsey-curtis-d-1x.png);
-        position: absolute;
-        width: 100%;
-        height: 199.68px;
-        left: 0px;
-        top: 0px;
-        border-radius: 100.166px;
-        object-fit: contain;
-        transform: translateY(-320);
+    .products-ice-cream-circle {
+    top: -25%;
+    background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+    box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
+    border-radius: 150%;
+    width: 300px;
+    height: 300px;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+}
 
-        @mixin сentering-x() {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-    }
+.products-ice-cream-circle::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url(/src/images/desktop-png/kelsey-curtis-d-1x.png);
+    position: absolute;
+    bottom: 17px;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 150%;
+}
 
-    .products-ice-coffee::before {
-        content: url(/src/images/desktop-png/pariwat-pannium-d-1x.png);
-        width: 100%;
-        height: 199.68px;
-        left: 0px;
-        top: 0px;
-        border-radius: 100.166px;
-        object-fit: contain;
-        transform: translateY(-320);
+.products-ice-coffee-circle {
+    top: -25%;
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);    border-radius: 150%;
+    width: 300px;
+    height: 300px;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+}
 
-        @mixin сentering-x() {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-    }
+.products-ice-coffee-circle::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url(/src/images/desktop-png/pariwat-pannium-d-1x.png);
+    position: absolute;
+    bottom: 17px;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 150%;
+}
 
-    .products-milkshakes::before {
-        content: url(/src/images/desktop-png/victor-rutka-d-1x.png);
-        position: absolute;
-        width: 100%;
-        height: 199.68px;
-        left: 0px;
-        top: 0px;
-        border-radius: 100.166px;
-        object-fit: contain;
-        transform: translateY(-320);
+.products-milkshakes-circle {
+    top: -25%;
+    background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);    border-radius: 150%;
+    width: 300px;
+    height: 300px;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+}
 
-        @mixin сentering-x() {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-    }
+.products-milkshakes-circle::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url(/src/images/desktop-png/victor-rutka-d-1x.png);
+    position: absolute;
+    bottom: 17px;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 150%;
+}
 
     .product-description {
         font-family: 'Montserrat';
         width: 100%;
-        height: 147px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -639,7 +636,6 @@
         padding-left: 63px;
         padding-right: 63px;
         color: #131313;
-
         &:last-child {
             width: 100%;
             height: 132.27px;
@@ -647,55 +643,34 @@
     }
 
     .btn-open {
-        position: absolute;
-        // width: 40px;
-        height: 0px;
+        cursor: url(../images/cursor.png), auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 40px;
         border: none;
+     
         background: none;
-        bottom: 0;
+        bottom: 20px;
     }
 
-    .btn-open::before {
-        content: "";
-        display: block;
-        width: 50%;
-        height: 50%;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        mask-image: url(/src/images/sprite.svg#icon-frame-53);
-        mask-position: center;
-        mask-repeat: no-repeat;
-        mask-size: contain;
+    .btn-open:hover .open-icon{
+        width: 50px;
+    }
+
+    .btn-open:focus .open-icon{
+        width: 50px;
+
     }
 
     .open-icon {
-        position: absolute;
+        
         width: 40px;
-        height: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 0;
-
-        &:hover {
-            width: 50px;
-            top: 92px;
-        }
-
-        &:focus {
-            width: 50px;
-            top: 148px;
-        }
+        height: 50px;
+      
+        
+   
     }
-}
 
-        // .circle {
-        //     position: absolute;
-        //         top: 50px;
-        //         border-radius: 50%/50%;
-        //         padding-bottom: 7px;
-        //         background-color: rgba(156, 190, 143, 0.7);
-        //         box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
-        //         z-index: 2;
-        //         transform: translate(0%, -180%);
-        // }
+}
