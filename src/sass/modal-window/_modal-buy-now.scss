@@ -4,23 +4,15 @@
     top: 50%;
     left: 50%;
 
-    transform: translate(-50%,-50%);  
+    transform: translate(-50%, -50%);
     padding: 28px;
     background-color: var(--color-primary-text);
-    border-color:  var(--color-btn-default);
+    border-color: var(--color-btn-default);
     border: 2px solid var(--color-btn-default);
     border-radius: 10px;
-}
+  }
 
-/*.position {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% -50%);  
-}*/
-
-.modal-buy-now-close-btn {
-
+  .modal-buy-now-close-btn {
     position: absolute;
     top: 11px;
     right: 11px;
@@ -69,8 +61,7 @@
     }
   }
 
-
-.modal-buy-now__picture {
+  .modal-buy-now__picture {
     width: 132px;
 
     position: absolute;
@@ -117,9 +108,7 @@
     }
   }
 
-
   .modal-buy-now__picture-list {
-
     position: absolute;
     top: 50px;
     width: 132px;
@@ -146,9 +135,7 @@
     }
   }
 
-
   .modal-buy-now__picture-item {
-
     position: absolute;
     top: 50px;
     width: 132px;
@@ -180,14 +167,10 @@
     color: var(--color-secondary-text);
     background-color: rgba(248, 210, 78, 0.1);
 
- 
-&::placeholder {
-  color: var(--color-secondary-text) ;
- }
-}
-
+    &::placeholder {
+      color: var(--color-secondary-text);
+    }
   }
-
 
   .modal-buy-now__message {
     width: 100%;
@@ -201,18 +184,14 @@
     resize: none;
     background-color: rgba(248, 210, 78, 0.1);
 
-
-&::placeholder {
-  color: var(--color-secondary-text) ;
- }
-}
-
-.modal-buy-now__submit {
-    width: 114px;
-    font-size: 12px;
-
+    &::placeholder {
+      color: var(--color-secondary-text);
+    }
   }
 
+  .modal-buy-now__submit {
+    width: 114px;
+    font-size: 12px;
     font-weight: 600;
     line-height: 1.25;
     border: none;
@@ -226,40 +205,32 @@
   }
 }
 
-
-/*@media screen and (min-width: 768px) {
-    .modal-buy-now {
-        display: none;
-    }
-}*/
-
 @media screen and (min-width: 768px) {
-    .modal-buy-now {
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        width: 568px;
-        height: 644px;   
-        padding: 32px 54px;
-        background-color: var(--color-primary-text);
-        border-color:  var(--color-btn-default);
-        border: 2px solid var(--color-btn-default);
-        border-radius: 10px;
-     }
+  .modal-buy-now {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 568px;
+    height: 644px;
+    padding: 32px 54px;
+    background-color: var(--color-primary-text);
+    border-color: var(--color-btn-default);
+    border: 2px solid var(--color-btn-default);
+    border-radius: 10px;
+  }
 
-    .modal-buy-now-close-btn {
-        position: absolute;
-        top: 24px;
-        right: 24px;
-        border: 0;
-        padding: 0;
-        line-height: 0;
-        color: var(--color-secondary-text);
-        background-color: var(--color-primary-text);
-    }
-
+  .modal-buy-now-close-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    border: 0;
+    padding: 0;
+    line-height: 0;
+    color: var(--color-secondary-text);
+    background-color: var(--color-primary-text);
+  }
 
   .modal-buy-now__form-title {
     font-family: Seymour One;
@@ -298,7 +269,7 @@
     }
   }
 
-.modal-buy-now__picture {
+  .modal-buy-now__picture {
     width: 132px;
 
     position: absolute;
@@ -344,8 +315,7 @@
     }
   }
 
-
-.modal-buy-now__picture-list {
+  .modal-buy-now__picture-list {
     width: 132px;
 
     position: absolute;
@@ -373,8 +343,7 @@
     }
   }
 
-
-.modal-buy-now__picture-item {
+  .modal-buy-now__picture-item {
     width: 132px;
 
     position: absolute;
@@ -407,14 +376,10 @@
     color: var(--color-secondary-text);
     background-color: rgba(248, 210, 78, 0.1);
 
-
-&::placeholder {
-  color: var(--color-secondary-text) ;
- }
-}
-
+    &::placeholder {
+      color: var(--color-secondary-text);
+    }
   }
-
 
   .modal-buy-now__message {
     width: 368px;
@@ -431,14 +396,10 @@
     resize: none;
     background-color: rgba(248, 210, 78, 0.1);
 
-
-&::placeholder {
-  color: var(--color-secondary-text) ;
- }
-}
-
+    &::placeholder {
+      color: var(--color-secondary-text);
+    }
   }
-
 
   .modal-buy-now__submit {
     font-size: 14px;
