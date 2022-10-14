@@ -37,7 +37,15 @@
     border: none;
     background: none;
     font-weight: 600;
+
     
+
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--color-btn-default);
+    cursor: url(../images/cursor.png), auto;
+
+    &:focus,
+
     &:hover {
         color: var(--color-btn-hover_focus);
     }
@@ -62,6 +70,7 @@
     fill: #FCFCFC;
     padding: 0px 0px;
     z-index: 100;
+    cursor: url(../images/cursor.png), auto;
 }
 .container-hero__arrow-icon {    
     width: 40px;
@@ -195,9 +204,7 @@
         left: 0px;
         z-index: 25; 
     }
-    .container-hero__backlight {
-        width: 466px;
-        right: 80px;
+    .container-hero__backlight {        
         z-index: 25;
         background: rgba(252, 252, 252, 0.44);
             filter: blur(27.9859px);        
@@ -228,8 +235,9 @@
         width: 767px;
     }
     .container-hero__backlight {
-        width: 266px;
-        height: 341px;
+        width: 256px;
+        height: 321px;
+        right: 85px;
     }
     .container-hero__image-ice-cream {        
         right: 93px;
@@ -307,9 +315,9 @@
         z-index: 25; 
     }
     .container-hero__backlight {        
-        width: 477px;
-        height: 589px;
-        right: 65px;
+        width: 437px;
+        height: 580px;
+        right: 85px;
         z-index: 25;        
         background: rgba(252, 252, 252, 0.44);
         filter: blur(50px);

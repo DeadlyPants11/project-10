@@ -1,4 +1,4 @@
-<header class="page-header">
+<header class="page-header" id="home">
   <div class="container page-header_horisontal">
     <a href="./index.html" class="logo"
       ><picture>
@@ -41,7 +41,7 @@
       </svg>
     </button>
 
-    <button type="button" class="btn-buy-now btn-buy-now_mobile-hidden">
+    <button type="button" class="btn-buy-now btn-buy-now_mobile-hidden" modal-buy-now-open>
       Buy now
       <svg
         lang="en"
@@ -94,23 +94,41 @@
           </svg>
         </button>
         <ul class="mobile-navigation">
-          <li><a href="#home" class="mobile-navigation__link">Home</a></li>
+          <li>
+            <a
+              href="#home"
+              class="mobile-navigation__link"
+              onclick="location.hash='home'; location.reload();"
+              >Home</a
+            >
+          </li>
           <li>
             <a
               href="#made"
-              class="mobile-navigation__link mobile-navigation__link_black"
+              class="mobile-navigation__link"
+              onclick="location.hash='made'; location.reload();"
               >How it’s made?</a
             >
           </li>
           <li>
-            <a href="#products" class="mobile-navigation__link">Our products</a>
+            <a
+              href="#products"
+              class="mobile-navigation__link"
+              onclick="location.hash='products'; location.reload();"
+              >Our products</a
+            >
           </li>
           <li>
-            <a href="#contact" class="mobile-navigation__link">Contact</a>
+            <a
+              href="#contact"
+              class="mobile-navigation__link"
+              onclick="location.hash='contact'; location.reload();"
+              >Contact</a
+            >
           </li>
         </ul>
 
-        <button type="button" class="btn-buy-now btn-buy-now_mobile-visible">
+        <button type="button" class="btn-buy-now btn-buy-now_mobile-visible" modal-buy-now-open>
           Buy now
           <svg
             lang="en"
