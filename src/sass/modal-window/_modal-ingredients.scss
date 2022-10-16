@@ -14,17 +14,8 @@
   flex-direction: column;
 }
 
-.modal-test-btn {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-}
-
 .modal-ing {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  @include сentering-xy();
   opacity: 1;
   z-index: 100;
   width: 280px;
@@ -34,48 +25,35 @@
   border-radius: 10px;
   overflow: auto;
   max-height: 100%;
-
-  @media screen and (min-width: 768px) {
-    width: 568px;
-    padding: 32px 40px;
-  }
 }
 
 .modal-ing__close-btn {
+  @include fcc;
+
   position: absolute;
   top: 28px;
   right: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 20px;
   height: 20px;
   padding: 0;
   background-color: transparent;
   box-shadow: none;
-
-  @media screen and (min-width: 768px) {
-    top: 20px;
-    right: 20px;
-  }
 }
 
 .modal-ing__form-title {
   font-family: Seymour One;
   text-align: center;
-  font-weight: 400;
   font-size: 20px;
-  line-height: 28px;
-  margin-bottom: 24px;
+  line-height: 1.4;
+  margin-bottom: 22px;
 }
 
 .modal-ing__img-container {
+  @include margin-auto;
   width: 132px;
   height: 138px;
   border-radius: 50%;
   margin-bottom: 24px;
-  margin-left: auto;
-  margin-right: auto;
   background-color: var(--tint-icecream);
   box-shadow: 0 5.26027px 19.726px rgb(10 136 23 / 25%);
 }
@@ -91,25 +69,20 @@
 }
 
 .modal-ing__img {
+  @include margin-auto;
   border-radius: 50%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .modal-ing__nutritional-value {
   display: flex;
   justify-content: center;
-  margin-bottom: 48px;
+  margin-bottom: 39px;
 }
 
 .modal-ing__list {
   display: flex;
   gap: 9px;
   text-align: center;
-
-  @media screen and (min-width: 768px) {
-    gap: 20px;
-  }
 }
 
 .modal-ing__item {
@@ -118,38 +91,34 @@
   border: 2px solid var(--tint-icecream);
   border-radius: 40px;
 
-  @media screen and (min-width: 768px) {
-    width: 65px;
-    height: 90px;
-  }
-
   & .gramm {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include fcc;
+    @include margin-auto;
     font-weight: 500;
-    font-size: 12px;
-    line-height: 2.33;
+    font-size: 10px;
+    line-height: 2.8;
     width: 43px;
     height: 43px;
     border-radius: 50%;
     margin-top: -2px;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 8px;
-
     background-color: var(--tint-icecream);
     box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
-
     @media screen and (min-width: 768px) {
       width: 53px;
       height: 53px;
+      font-size: 12px;
+      line-height: 2.33;
     }
   }
 
   & .text {
-    font-size: 12px;
-    line-height: 1.25;
+    font-size: 10px;
+    line-height: 1.2;
+    @media screen and (min-width: 768px) {
+      font-size: 12px;
+      line-height: 1.25;
+    }
   }
 }
 
@@ -187,10 +156,7 @@
   flex-wrap: wrap;
   gap: 11px;
   margin-bottom: 48px;
-  letter-spacing: 0.04em;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 176%;
+  line-height: 1.76;
 }
 
 .ing__item {
@@ -200,13 +166,8 @@
 }
 
 .modal-form {
+  @include margin-auto;
   width: 236px;
-  margin-left: auto;
-  margin-right: auto;
-
-  @media screen and (min-width: 768px) {
-    width: 368px;
-  }
 }
 
 .modal-form__input {
@@ -242,14 +203,41 @@
 }
 
 .modal-form__btn {
+  @include margin-auto;
   width: 132px;
   font-weight: 600;
-  font-size: 14px;
-  line-height: 1.21;
-  margin-left: auto;
-  margin-right: auto;
+  line-height: 1.22;
+}
 
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .modal-ing {
+    width: 568px;
+    padding: 32px 40px;
+  }
+  .modal-ing__close-btn {
+    top: 20px;
+    right: 20px;
+  }
+  .modal-ing__form-title {
+    margin-bottom: 27px;
+  }
+  .modal-ing__img-container {
+    margin-bottom: 21px;
+  }
+  .modal-ing__nutritional-value {
+    margin-bottom: 48px;
+  }
+  .modal-ing__list {
+    gap: 20px;
+  }
+  .modal-ing__item {
+    width: 65px;
+    height: 90px;
+  }
+  .modal-form {
+    width: 368px;
+  }
+  .modal-form__btn {
     width: 121px;
   }
 }
