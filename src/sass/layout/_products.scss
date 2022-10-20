@@ -491,13 +491,13 @@
         margin-left: auto;
         margin-right: auto;
         max-width: 100%;
-        flex-basis: calc((100% - 95px) /3);
+        flex-basis: calc((100% - 90px) /3);
     }
 
     .card-set {
         display: flex;
         flex-wrap: wrap;
-        gap: 40px;
+        gap: 20px;
     }
 
     .products-item {
