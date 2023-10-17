@@ -1,15 +1,16 @@
 @media screen and (max-width: 767px) {
   .modal-buy-now {
     position: absolute;
-    top: 50%;
+    top: 20px;
     left: 50%;
 
-    transform: translate(-50%, -50%);
+    transform: translate(-50%);
     padding: 28px;
     background-color: var(--color-primary-text);
     border-color: var(--color-btn-default);
     border: 2px solid var(--color-btn-default);
     border-radius: 10px;
+    min-width: 280px;
   }
 
   .modal-buy-now-close-btn {
